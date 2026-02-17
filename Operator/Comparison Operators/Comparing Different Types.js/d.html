@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link>
+    <a>
+        Comparing Different Types
+        Comparing data of different types may give unexpected results.
+
+        When comparing a string with a number, JavaScript will convert the string to a number when doing the comparison.
+        An empty string converts to 0. A non-numeric string converts to NaN which is always false.
+    </a>  
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = 2 > "John";
+    </script>
+
+</body>
+
+</html>
