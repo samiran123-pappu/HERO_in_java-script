@@ -19,6 +19,7 @@ console.log("1. indexOf() & lastIndexOf()");
 
 console.log(phrase.indexOf("fox"));          // 16  (first occurrence)
 console.log(phrase.lastIndexOf("fox"));      // 40  (last occurrence)
+console.log(phrase.length)
 
 console.log(phrase.indexOf("cat"));          // -1  (not found)
 console.log(phrase.lastIndexOf("cat"));      // -1
