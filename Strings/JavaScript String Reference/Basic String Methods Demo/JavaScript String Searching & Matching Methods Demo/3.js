@@ -1,122 +1,145 @@
-// JavaScript String Searching & Matching Methods Demo
+// ==============================================
+// 0. Show original sample strings
+// ==============================================
+{
+  const phrase = "The quick brown fox jumps over the lazy fox again";
+  const email  = "contact@samiran.dev";
+  const text   = "I love JavaScript and JavaScript is awesome";
+  const messy  = "  hello   world  hello  ";
 
-const phrase = "The quick brown fox jumps over the lazy fox again";
-const email  = "contact@samiran.dev";
-const text   = "I love JavaScript and JavaScript is awesome";
-const messy  = "  hello   world  hello  ";
-
-console.log("Original strings:");
-console.log("phrase →", phrase);
-console.log("email  →", email);
-console.log("text   →", text);
-console.log("messy  →", JSON.stringify(messy)); // shows spaces clearly
-console.log("messy  →", `${messy}`); // shows spaces clearly
-
-console.log("");
-
-// ────────────────────────────────────────────────
-// indexOf() / lastIndexOf()
-// ────────────────────────────────────────────────
-console.log("1. indexOf() & lastIndexOf()");
-
-console.log(phrase.indexOf("fox"));          // 16  (first occurrence)
-console.log(phrase.lastIndexOf("fox"));      // 40  (last occurrence)
-
-console.log(phrase.indexOf("cat"));          // -1  (not found)
-console.log(phrase.lastIndexOf("cat"));      // -1
-
-console.log(phrase.indexOf("fox", 20));      // 40  (start searching from index 20)
-console.log(phrase.lastIndexOf("fox", 30));  // 16  (search backwards from index 30)
-
-console.log(email.indexOf("@"));             // 7
-console.log("");
-
-// ────────────────────────────────────────────────
-// includes() / startsWith() / endsWith()
-// ────────────────────────────────────────────────
-console.log("2. includes(), startsWith(), endsWith()");
-
-console.log(phrase.includes("quick"));       // true
-console.log(phrase.includes("Quick"));       // false (case-sensitive)
-console.log(phrase.includes("fox", 30));     // true (starts searching from index 30)
-
-console.log(email.startsWith("contact"));    // true
-console.log(email.startsWith("samiran"));    // false
-console.log(email.startsWith("@", 7));       // true
-
-console.log(email.endsWith(".dev"));         // true
-console.log(email.endsWith(".com"));         // false
-console.log(email.endsWith("@", 8));         // true (checks up to position 8)
-
-console.log("");
-
-// ────────────────────────────────────────────────
-// search()  → returns index or -1 (supports regex)
-// ────────────────────────────────────────────────
-console.log("3. search()");
-
-console.log(phrase.search("fox"));           // 16  (same as indexOf for string)
-console.log(phrase.search(/fox/i));          // 16  (case-insensitive)
-console.log(phrase.search(/\d/));            // -1  (no digits)
-console.log(email.search(/@[\w-]+\./));      // 7   (looks for @ followed by domain + dot)
-console.log("");
-
-// ────────────────────────────────────────────────
-// match()  → returns match object or null (with capturing groups)
-// ────────────────────────────────────────────────
-console.log("4. match()");
-
-console.log(email.match(/@([\w-]+)\.(\w+)/));
-// → ["@samiran.dev", "samiran", "dev"]   (full match + groups)
-
-console.log(phrase.match(/fox/g));           // null  (without g → only first match object)
-console.log(phrase.match(/fox/gi));          // ["fox", "fox"]  (with g → array of matches)
-
-console.log(text.match(/\b\w{4}\b/g));       // words with exactly 4 letters
-// → ["quick", "brown", "jumps", "over", "lazy", "again"]
-
-console.log("");
-
-// ────────────────────────────────────────────────
-// matchAll()  → returns iterator of all matches with details (ES2020+)
-// ────────────────────────────────────────────────
-console.log("5. matchAll()  (best for detailed regex matches)");
-
-const matches = text.matchAll(/script/gi);
-
-for (const match of matches) {
-  console.log({
-    match: match[0],
-    index: match.index,
-    input: match.input.substring(match.index, match.index + 30) + "..."
-  });
+  console.log("Original strings:");
+  console.log("phrase →", phrase);
+  console.log("email  →", email);
+  console.log("text   →", text);
+  console.log("messy (JSON) →", JSON.stringify(messy));
+  console.log("messy (template) →", `${messy}`);
+  console.log("");
 }
-// Example output:
-// { match: "Script", index: 7,  input: "JavaScript and..." }
-// { match: "Script", index: 22, input: "JavaScript is..." }
 
-console.log("\nmatchAll with capturing groups:");
-const urlMatches = "Visit https://x.ai and https://grok.x.ai".matchAll(/https?:\/\/([\w.-]+)/g);
 
-for (const m of urlMatches) {
-  console.log(m[0], "→ domain:", m[1]);
+// ==============================================
+// 1. indexOf() & lastIndexOf()
+// ==============================================
+{
+  const phrase = "The quick brown fox jumps over the lazy fox again";
+  const email  = "contact@samiran.dev";
+
+  console.log("indexOf('fox'):", phrase.indexOf("fox"));
+  console.log("lastIndexOf('fox'):", phrase.lastIndexOf("fox"));
+
+  console.log("indexOf('cat'):", phrase.indexOf("cat"));
+  console.log("lastIndexOf('cat'):", phrase.lastIndexOf("cat"));
+
+  console.log("indexOf('fox', 20):", phrase.indexOf("fox", 20));
+  console.log("lastIndexOf('fox', 30):", phrase.lastIndexOf("fox", 30));
+
+  console.log("email indexOf('@'):", email.indexOf("@"));
+  console.log("");
 }
-// https://x.ai → domain: x.ai
-// https://grok.x.ai → domain: grok.x.ai
 
-console.log("");
 
-// ────────────────────────────────────────────────
-// Quick comparison table (printed)
-console.log("Quick Comparison:");
+// ==============================================
+// 2. includes(), startsWith(), endsWith()
+// ==============================================
+{
+  const phrase = "The quick brown fox jumps over the lazy fox again";
+  const email  = "contact@samiran.dev";
 
-console.table([
-  { Method       : "indexOf"     , Returns      : "number (index) or -1", Regex : "No"  , AllOccurrences : "No"  },
-  { Method       : "lastIndexOf" , Returns      : "number (index) or -1", Regex : "No"  , AllOccurrences : "No"  },
-  { Method       : "search"      , Returns      : "number (index) or -1", Regex : "Yes", AllOccurrences : "No"  },
-  { Method       : "includes"    , Returns      : "true/false"           , Regex : "No"  , AllOccurrences : "No"  },
-  { Method       : "startsWith"  , Returns      : "true/false"           , Regex : "No"  , AllOccurrences : "No"  },
-  { Method       : "endsWith"    , Returns      : "true/false"           , Regex : "No"  , AllOccurrences : "No"  },
-  { Method       : "match"       , Returns      : "object / array / null", Regex : "Yes", AllOccurrences : "With g" },
-  { Method       : "matchAll"    , Returns      : "iterator of match objs", Regex : "Yes", AllOccurrences : "Always" }
-]);
+  console.log("includes('quick'):", phrase.includes("quick"));
+  console.log("includes('Quick'):", phrase.includes("Quick"));
+  console.log("includes('fox', 30):", phrase.includes("fox", 30));
+
+  console.log("startsWith('contact'):", email.startsWith("contact"));
+  console.log("startsWith('samiran'):", email.startsWith("samiran"));
+  console.log("startsWith('@', 7):", email.startsWith("@", 7));
+
+  console.log("endsWith('.dev'):", email.endsWith(".dev"));
+  console.log("endsWith('.com'):", email.endsWith(".com"));
+  console.log("endsWith('@', 8):", email.endsWith("@", 8));
+
+  console.log("");
+}
+
+
+// ==============================================
+// 3. search()  → regex supported
+// ==============================================
+{
+  const phrase = "The quick brown fox jumps over the lazy fox again";
+  const email  = "contact@samiran.dev";
+
+  console.log("search('fox'):", phrase.search("fox"));
+  console.log("search(/fox/i):", phrase.search(/fox/i));
+  console.log("search(/\\d/):", phrase.search(/\d/));
+  console.log("email.search domain:", email.search(/@[\w-]+\./));
+  console.log("");
+}
+
+
+// ==============================================
+// 4. match()
+// ==============================================
+{
+  const phrase = "The quick brown fox jumps over the lazy fox again";
+  const email  = "contact@samiran.dev";
+  const text   = "I love JavaScript and JavaScript is awesome";
+
+  console.log("email.match:", email.match(/@([\w-]+)\.(\w+)/));
+
+  console.log("phrase.match(/fox/):", phrase.match(/fox/));
+  console.log("phrase.match(/fox/gi):", phrase.match(/fox/gi));
+
+  console.log("4-letter words:", text.match(/\b\w{4}\b/g));
+  console.log("");
+}
+
+
+// ==============================================
+// 5. matchAll()  → detailed iterator
+// ==============================================
+{
+  const text = "I love JavaScript and JavaScript is awesome";
+
+  console.log("matchAll(/script/gi):");
+
+  const matches = text.matchAll(/script/gi);
+
+  for (const match of matches) {
+    console.log({
+      match: match[0],
+      index: match.index,
+      preview: match.input.substring(match.index, match.index + 30) + "..."
+    });
+  }
+
+  console.log("\nmatchAll with URLs:");
+
+  const urlMatches =
+    "Visit https://x.ai and https://grok.x.ai"
+      .matchAll(/https?:\/\/([\w.-]+)/g);
+
+  for (const m of urlMatches) {
+    console.log(m[0], "→ domain:", m[1]);
+  }
+
+  console.log("");
+}
+
+
+// ==============================================
+// 6. Quick comparison table
+// ==============================================
+{
+  console.log("Quick Comparison:");
+
+  console.table([
+    { Method: "indexOf",     Returns: "number or -1",        Regex: "No",  All: "No" },
+    { Method: "lastIndexOf", Returns: "number or -1",        Regex: "No",  All: "No" },
+    { Method: "search",      Returns: "number or -1",        Regex: "Yes", All: "No" },
+    { Method: "includes",    Returns: "true / false",        Regex: "No",  All: "No" },
+    { Method: "startsWith",  Returns: "true / false",        Regex: "No",  All: "No" },
+    { Method: "endsWith",    Returns: "true / false",        Regex: "No",  All: "No" },
+    { Method: "match",       Returns: "object / array / null", Regex: "Yes", All: "With g" },
+    { Method: "matchAll",    Returns: "iterator of objects", Regex: "Yes", All: "Always" }
+  ]);
+}
