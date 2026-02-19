@@ -39,7 +39,7 @@ console.log(phrase.includes("quick"));       // true
 console.log(phrase.includes("Quick"));       // false (case-sensitive)
 console.log(phrase.includes("fox", 30));     // true (starts searching from index 30)
 
-console.log(email.startsWith("contact"));    // true
+console.log(email.endsWith("contact"));    // true
 console.log(email.startsWith("samiran"));    // false
 console.log(email.startsWith("@", 7));       // true
 
