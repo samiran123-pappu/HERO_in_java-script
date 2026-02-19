@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>JavaScript Template Strings</h1>
+
+<h2>JavaScript Numbers</h2>
+
+<p>The toString() method can output numbers from base 2 to 36:</p>
 
 <p id="demo"></p>
 
 <script>
-let header = "Template Strings";
-let tags = ["template strings", "javascript", "es6"];
+let myNumber = 32;
+document.getElementById("demo").innerHTML =
+"Decimal 32 = " + "<br><br>" + 
 
-let html = `<h2>${header}</h2><ul>`;
-
-for (const x of tags) {
-  html += `<li>${x}</li>`;
-}
-
-html += `</ul>`;
-document.getElementById("demo").innerHTML = html;
+"Hexatrigesimal (base 36): " + myNumber.toString(36) + "<br>" +
+"Duotrigesimal (base 32): " + myNumber.toString(32) + "<br>" +
+"Hexadecimal (base 16): " + myNumber.toString(16) + "<br>" +
+"Duodecimal (base 12): " + myNumber.toString(12) + "<br>" +
+"Decimal (base 10): " + myNumber.toString(10) + "<br>" +
+"Octal (base 8): " + myNumber.toString(8) + "<br>" +
+"Binary (base 2): " + myNumber.toString(2);
 </script>
 
 </body>
