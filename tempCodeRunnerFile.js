@@ -1,1 +1,3 @@
-console.log(text2)
+person.fullName = function() {
+//   return this.firstName + " " + this.lastName;
+// }

@@ -1,6 +1,7 @@
-function fullName(firstName, lastName) {
-  return firstName + " " + lastName;
-}
+const fruits = { Bananas: 300, Oranges: 200, Apples: 500 };
 
-const $fullName = fullName("firstName","lastName");
-console.log($fullName);
+let text = "";
+for (let [fruit, value] of Object.entries(fruits)) {
+  text += fruit + ": " + value + "<br>";
+}
+console.log(text);

@@ -1,26 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
+<html>
 <body>
-    <h1>JavaScript Functions</h1>
+<h1>JavaScript Objects</h1> 
+<h2>Object Constructors</h2>
 
-    <p>You can call functions from events.</p>
+<p id="demo"></p>
 
-    <button onclick=" document.getElementById('demo').innerHTML = toCelsius(770)">Click Me</button>
+<script>
+// Constructor function for Person Objects
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
 
-    <p id="demo"></p>
+// Create 2 Person objects
+const myFather = new Person("John", "Doe", 50, "blue");
+const myMother = new Person("Sally", "Rally", 48, "green");
 
-    <script>
-        function toCelsius(temp) {
-            return 5/9 * (temp - 32);
-        }
-    </script>
+// Add a Name Method
+myMother.changeName = function (name) {
+  this.lastName = name;
+}
+
+// Change Name
+myMother.changeName("Doe");
+
+// Display fullName
+document.getElementById("demo").innerHTML =
+"My mother's last name is " + myMother.lastName; 
+</script>
+
 </body>
-
 </html>
