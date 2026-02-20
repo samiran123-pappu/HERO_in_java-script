@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>JavaScript Objects</h1> 
-<h2>Object Constructors</h2>
+
+<h2>JavaScript Global Variables</h2>
+<p>If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable:</p>
 
 <p id="demo"></p>
 
 <script>
-// Display the Type
-document.getElementById("demo").innerHTML =
-"<p>The typeof new Object() is " + typeof new Object() + "</p>" +
-"<p>The typeof new Array() is " + typeof new Array() + "</p>" +
-"<p>The typeof new Map() is " + typeof new Map() + "</p>" +
-"<p>The typeof new Set() is " + typeof new Set() + "</p>" +
-"<p>The typeof new Date() is " + typeof new Date() + "</p>" +
-"<p>The typeof new RegExp() is " + typeof new RegExp() + "</p>" +
-"<p>The typeof new Function() is " + typeof new Function() + "</p>";
+myFunction();
+// code here can use carName as a global variable
+document.getElementById("demo").innerHTML = "I can display " + carName;
+
+function myFunction() {
+  carName = "Volvo";
+}
 </script>
 
 </body>
