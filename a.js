@@ -1,7 +1,9 @@
-const fruits = { Bananas: 300, Oranges: 200, Apples: 500 };
 
-let text = "";
-for (let [fruit, value] of Object.entries(fruits)) {
-  text += fruit + ": " + value + "<br>";
+
+
+let d = new Date();
+
+d.valueOf = function() {
+  return 42;
 }
-console.log(text);
+console.log(d);
