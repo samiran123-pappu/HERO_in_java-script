@@ -1,5 +1,2 @@
-a = [1, 3, 4, 5, 6]
-console.log(a) // Logs the original array [1, 3, 4, 5, 6]
-let b = a.shift()
-console.log(a) // Logs the remaining array elements [3, 4, 5, 6]
-console.log(b) // Logs the value that was removed from the array (1)
+let d = new Date(2026, 0, 17); // Month 0 = January
+console.log(d); // Output: Sat Jan 17 2026 00:00:00 GMT+0000 (Coordinated Universal Time)
