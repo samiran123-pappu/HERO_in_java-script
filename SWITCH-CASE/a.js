@@ -11,7 +11,16 @@ switch(new Date().getDay()){
     case 3:
         day = "Wednesday";
         break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+        break;
     default:
-        day = "hi";
+        day = "HOLIDAY";
 }
 console.log(day)
