@@ -3,7 +3,7 @@
 
 # These include calendar identification, day/month/year details, era information and other calendar metrics:
 
-# Property	                # Description
+Property	                 Description
 calendarID	                Calendar system identifier ("iso8601")
 day	                        The day as an integer (1-31)
 dayOfWeek	                The day of the week as an integer (1 = Monday)
