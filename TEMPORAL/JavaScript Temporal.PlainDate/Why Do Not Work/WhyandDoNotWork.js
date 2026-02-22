@@ -13,6 +13,8 @@ const date2 = Temporal.PlainDate.from('2026-05-18');
 console.log(date1 < date2);
 
 
+let date3 = Temporal.PlainDate.from('2026-05-17');
+console.log(date1 === date3);
 
 // When to Use PlainDate
 // Any date without time
@@ -43,6 +45,10 @@ console.log(date1 < date2);
 // JavaScript Temporal PlainDateTime.
 
 
-let date3 = Temporal.PlainDate.from('2026-05-17');
-console.log(date1 === date3);
- 
+
+let d = new Date(2026, 0, 17); // Month 0 = January
+console.log(d); // Output: Sat Jan 17 2026 00:00:00 GMT+0000 (Coordinated Universal Time)
+
+
+let d2 = Temporal.PlainDate.from('2026-01-17');
+console.log(`${d2}`); // Output: 2026-01-17
