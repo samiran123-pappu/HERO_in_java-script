@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Dates</h1>
+<p>Date objects can change.</p>
+<p>Dates can be overwritten.</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Date
+let d = new Date(2026, 5, 1);
+// Add 7 days
+d.setDate(d.getDate() + 7);
+
+document.getElementById("demo").innerHTML = d;
+</script>
+
+</body>
+</html>
