@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>  </html>
+
+<body>
+    <h1>JavaScript Temporal.PlainDateTime</h1>
+    <h2>Comparing PlainDateTime Values</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        import { Temporal } from "@js-temporal/polyfill";
+        const dateTime1 = Temporal.PlainDateTime.from("2026-05-17T10:00:00");
+        const dateTime2 = Temporal.PlainDateTime.from("2026-05-17T10:00:00");
+        const result = dateTime1.equals(dateTime2);
+        document.getElementById("demo").innerHTML = "Are the dates equal? " + result;
+    </script>
+
+</body>
+
+</html>
