@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Temporal</h1>
+    <h2>The .PlainDate() Method</h2>
+
+    <p>PlainDate() lets you to create a date with no time:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const date = new Temporal.PlainDate(2026, 5, 17);
+
+        document.getElementById("demo").innerHTML = date.toString();
+    </script>
+
+</body>
+
+</html>

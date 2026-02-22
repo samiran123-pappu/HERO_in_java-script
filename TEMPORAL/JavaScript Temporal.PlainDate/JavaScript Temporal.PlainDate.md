@@ -10,3 +10,9 @@ How to use JavaScript Temporal.PlainDate
 How to work with dates without time
 How to add and subtract days
 How to compare dates safely
+
+
+# Note
+Plain Dates are used for dates that remain the same regardless of time zone.
+
+Plaind date is ideal for dates such as birthdays or holidays.
