@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+</head>
+
+<body>
+    <h1>JavaScript Temporal</h1>
+    <h2>The add() Method</h2>
+
+    <p id="demo">hi</p>
+
+    <script>
+        const date = Temporal.PlainDate.from("2026-02-17");
+        const duration = Temporal.Duration.from({ days: 7 });
+        // Display the result
+        const newDate = date.add(duration);
+        document.getElementById("demo").textContent = `New Date: ${newDate.toString()}`;
+    </script>
+</body>
+
+</html>

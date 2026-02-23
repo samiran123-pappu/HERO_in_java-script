@@ -14,8 +14,20 @@ const duration = Temporal.Duration.from({
   nanoseconds: 10,
 });
 console.log(duration.toString());
+console.log(duration.years); 
+console.log(duration.months);
+console.log(duration.weeks);
+console.log(duration.days);
+console.log(duration.hours);
+console.log(duration.minutes);
+console.log(duration.seconds);
+console.log(duration.milliseconds);
+console.log(duration.microseconds);
+console.log(duration.nanoseconds);
 
 // You can also create a Duration using an ISO 8601 string.
 
 const duration1 = Temporal.Duration.from({ days: 7, hours: 2 });
 console.log(duration1.toString());
+console.log(duration1.days);
+console.log(duration1.hours);

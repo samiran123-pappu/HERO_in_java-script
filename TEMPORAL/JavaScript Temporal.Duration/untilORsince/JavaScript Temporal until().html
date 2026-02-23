@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body></body>
+        <h1>JavaScript Temporal</h1>
+        <h2>The until() Method</h2>
+
+        <p id="demo"></p>
+
+        <script src="https://unpkg.com/@js-temporal/polyfill@0.4.3/dist/index.js"></script>
+        <script>
+            const date1 = Temporal.PlainDate.from("2026-02-17");
+            const date2 = Temporal.PlainDate.from("2026-02-10");
+            const duration = date1.until(date2);
+            document.getElementById("demo").innerHTML = duration.toString() + "<br>" + `Years: ${duration.years}, Months: ${duration.months}, Weeks: ${duration.weeks}, Days: ${duration.days}`;
+        </script>
+    </body>
+</html>
