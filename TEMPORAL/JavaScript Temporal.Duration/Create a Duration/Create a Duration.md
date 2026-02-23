@@ -5,7 +5,7 @@ You can create a Duration using numeric values.
 In this example, the duration is 7 days.
 
 const duration = new Temporal.Duration(0, 0, 0, 7);
-The parameters represent:
+# The parameters represent:
 ```bash
 Years
 Months
