@@ -46,8 +46,10 @@ Any system where time zones matter.
 
 
 # Type	---------------->Includes Time Zone	<--------Use Case
+```bash
 PlainDateTime--------------->No<----------Local scheduling without conversion
 ZonedDateTime-------------->Yes <-----------International or DST-aware systems
+```
 Summary
 Temporal.ZonedDateTime is the safest way to handle date and time with time zones.
 
