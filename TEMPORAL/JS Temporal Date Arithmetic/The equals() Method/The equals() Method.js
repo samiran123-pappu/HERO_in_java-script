@@ -9,4 +9,4 @@ const date1 = Temporal.PlainDate.from('2026-05-17');
 const date2 = Temporal.PlainDate.from('2026-05-17');
 
 let result = date1.equals(date2);
-console.log(result);
+console.log(result.toString());
