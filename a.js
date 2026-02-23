@@ -8,4 +8,4 @@ const duration2 = Temporal.Duration.from({ hours: 4, minutes: 30 });
 const totalDuration = duration1.add(duration2);
 // Display the result
 const demo = `Total Duration: ${totalDuration.toString()}`;
-console.log(demo);
+console.log(demo122);
