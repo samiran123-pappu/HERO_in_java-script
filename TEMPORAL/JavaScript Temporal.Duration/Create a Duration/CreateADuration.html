@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  </head>
+    <body>  </body>
+        <h1>JavaScript Temporal</h1>
+        <h2>The Duration Object</h2>
+
+        <p id="demo"></p>
+
+        <script src="https://unpkg.com/@js-temporal/polyfill@0.4.3/dist/index.js"></script>
+        <script>
+            const duration = new Temporal.Duration(0, 0, 0, 7);
+            document.getElementById("demo").innerHTML = duration.toString();
+        </script>
+    </body>
+</html>
