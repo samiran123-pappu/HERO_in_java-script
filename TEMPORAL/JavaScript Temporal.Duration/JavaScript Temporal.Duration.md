@@ -19,4 +19,23 @@ Note
 The since() method does this - other.
 
 The until() method does other - this.
+
+
+When to Use Duration
+
+Adding or subtracting time.
+
+Calculating age.
+
+Measuring differences between dates.
+
+Working with time spans (hours, days, months).
+
+Summary
+Temporal.Duration represents a length of time.
+
+It makes date arithmetic clear, readable, and safer than using manual millisecond calculations.
+
+Next Chapter
+JavaScript Temporal Date Arithmetic.
 ```
