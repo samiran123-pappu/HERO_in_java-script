@@ -12,3 +12,5 @@ const date3 = Temporal.PlainDate.from("2026-05-17");
 console.log(Temporal.PlainDate.compare(date1, date2));
 console.log(Temporal.PlainDate.compare(date1, date3));
 
+// The compare() method is designed to be passed directly into the JavaScript Array.sort() method:
+
