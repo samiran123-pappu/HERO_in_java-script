@@ -1,4 +1,4 @@
-# JS Temporal Date Arithmetic
+### JS Temporal Date Arithmetic
 ```bash
 Add and Subtract Dates Safely
 The Temporal API provides methods for easy and reliable date and time arithmetic.
