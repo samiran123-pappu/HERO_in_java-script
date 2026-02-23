@@ -40,3 +40,8 @@ Both methods accept an object with duration properties { days: 7, hours: 1 } as 
 
 Both methods handles date boundaries: adding one day to March 31st is April 1st.
 ```
+
+
+```bash
+From a Temporal.Instant you can only subtract a fixed duration (hours, minutes, seconds) but not calendar durations like months or years, as their length can vary depending on the time zone and the calendar.
+```
