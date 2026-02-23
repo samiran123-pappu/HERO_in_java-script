@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Temporal</h1>
+    <h2>The add() Method</h2>
+    <p>Temporal automatically handles different month lengths.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const date = Temporal.PlainDate.from("2026-01-31");
+        const result = date.add({ months: 1 });
+
+        document.getElementById("demo").innerHTML = "The result is " + result.toString();
+    </script>
+
+</body>
+
+</html>

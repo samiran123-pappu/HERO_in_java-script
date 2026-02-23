@@ -1,4 +1,5 @@
 # JavaScript Temporal.Instant
+```bash
 Working with Exact Time
 A Temporal.Instant represents an exact moment in time.
 
@@ -10,4 +11,4 @@ Compare Instants, convert from timestamps, and replace Date.now().
 
 Note
 Temporal is the modern way to work with dates and times in JavaScript.
-
+```

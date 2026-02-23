@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Temporal</h1>
+    <h2>The add() Method</h2>
+    <p>Temporal handles leap year adjustments automatically.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const date = Temporal.PlainDate.from("2024-02-29");
+        const result = date.add({ years: 1 });
+
+        document.getElementById("demo").innerHTML = "The result is " + result.toString();
+    </script>
+
+</body>
+
+</html>
