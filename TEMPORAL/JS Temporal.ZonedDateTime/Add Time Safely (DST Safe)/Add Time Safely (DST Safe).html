@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Temporal</h1>
+    <h2>The withTimeZone() Method</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const oslo = Temporal.ZonedDateTime.from
+        const start = Temporal.ZonedDateTime.from
+            ("2026-03-29T00:00:00+01:00[Europe/Oslo]");
+
+        const nextDay = start.add({ days: 1 });
+
+        document.getElementById("demo").innerHTML = nextDay.toString();
+    </script>
+
+</body>
+
+</html>
