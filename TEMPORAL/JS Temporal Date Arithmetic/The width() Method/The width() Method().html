@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Temporal</h1>
+    <h2>The with() Method</h2>
+    <p>The width() method returns a new date with specific fields replaced.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        // Create a Temporal object
+        const date = Temporal.PlainDate.from("2026-05-17");
+
+        // Replace month and day 
+        const customDate = date.with({ month: 12, day: 25 });
+
+        // Display new date
+        document.getElementById("demo").innerHTML = customDate.toString();
+    </script>
+
+</body>
+
+</html>
