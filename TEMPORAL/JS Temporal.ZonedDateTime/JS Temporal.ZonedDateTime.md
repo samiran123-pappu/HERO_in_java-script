@@ -45,8 +45,8 @@ Any system where time zones matter.
 # ZonedDateTime vs PlainDateTime
 
 
-# Type	---------------->Includes Time Zone	<--------Use Case
 ```bash
+Type	---------------->Includes Time Zone	<--------Use Case
 PlainDateTime--------------->No<----------Local scheduling without conversion
 ZonedDateTime-------------->Yes <-----------International or DST-aware systems
 ```
