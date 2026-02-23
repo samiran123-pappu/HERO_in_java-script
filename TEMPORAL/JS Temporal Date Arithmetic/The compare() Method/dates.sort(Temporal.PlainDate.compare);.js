@@ -1,3 +1,4 @@
+import { Temporal } from "@js-temporal/polyfill";
 // Create an Array of dates
 const dates = [
   Temporal.PlainDate.from("2026-05-17"),
