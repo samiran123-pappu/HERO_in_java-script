@@ -45,9 +45,9 @@ Any system where time zones matter.
 # ZonedDateTime vs PlainDateTime
 
 
-# Type	-------------------->Includes Time Zone	<--------Use Case
-# PlainDateTime---------------->	No	<---------------Local scheduling without conversion
-# ZonedDateTime-------------->	Yes <---------------------International or DST-aware systems
+# Type	---------------->Includes Time Zone	<--------Use Case
+# PlainDateTime--------------->No<----------Local scheduling without conversion
+# ZonedDateTime-------------->Yes <-----------International or DST-aware systems
 Summary
 Temporal.ZonedDateTime is the safest way to handle date and time with time zones.
 
