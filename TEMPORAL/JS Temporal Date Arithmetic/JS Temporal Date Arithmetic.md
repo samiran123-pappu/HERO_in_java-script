@@ -46,3 +46,7 @@ Both methods handles date boundaries: adding one day to March 31st is April 1st.
 
 `The compare() method is designed to be passed directly into the JavaScript Array.sort() method:`
 
+```bash
+Date Comparison
+Always use the equals() or compare() methods rather than standard equality operators.
+```

@@ -8,5 +8,5 @@ const dates = [
 
 // Sort chronologically
 let sortedDates = dates.sort(Temporal.PlainDate.compare);
-// console.log(sortedDates.map(date => date.toString()));
+console.log(sortedDates.map(date => date.toString()));
 console.log(sortedDates.toString())

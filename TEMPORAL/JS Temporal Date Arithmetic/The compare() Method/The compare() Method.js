@@ -14,3 +14,5 @@ console.log(Temporal.PlainDate.compare(date1, date3));
 
 // The compare() method is designed to be passed directly into the JavaScript Array.sort() method:
 
+// Date Comparison
+// Always use the equals() or compare() methods rather than standard equality operators.
