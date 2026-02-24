@@ -14,3 +14,6 @@ console.log(date1.toString());
 const nextDay = date.add({ days: 1 });
 
 console.log(nextDay.toString());
+
+// If a DST change occurs, Temporal adjusts automatically.
+
