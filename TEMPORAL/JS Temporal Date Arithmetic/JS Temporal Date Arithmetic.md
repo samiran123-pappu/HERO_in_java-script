@@ -95,3 +95,21 @@ console.log("15", date15.toString());
 console.log("16", date16.toString());
 console.log("17", date17.toString());
 ```
+
+
+
+# Best Practices
+Use PlainDate for date-only arithmetic.
+
+Use ZonedDateTime for time zone-aware calculations.
+
+Avoid manual millisecond calculations.
+
+Prefer immutable operations.
+
+# Summary
+```bash
+Temporal makes date arithmetic clear and predictable.
+
+You can safely add or subtract time without mutating values or breaking across DST changes.
+```
