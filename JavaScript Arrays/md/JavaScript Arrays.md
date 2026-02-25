@@ -25,8 +25,8 @@ cars[2]= "BMW";
 ```
 
 
+# Using the JavaScript Keyword new
 ```javascript
-Using the JavaScript Keyword new
 The following example also creates an Array, and assigns values to it:
 
 const cars = new Array("Saab", "Volvo", "BMW");
@@ -35,8 +35,8 @@ console.log(cars);
 ```
 
 
+# Arrays are Objects
 ```bash
-Arrays are Objects
 Arrays are a special type of objects. The typeof operator in JavaScript returns "object" for arrays.
 
 But, JavaScript arrays are best described as arrays.
