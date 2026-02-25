@@ -8,7 +8,9 @@
 ### Example: 10 (base 10)
 ### Hex (base 16): uses 0-9 and A-F. Compact way to write binary.
 ### Example: 0xFF (base 16) = 255 (base 10)
-### Regex is not a number system.
+
+
+## Regex is not a number system:
 ### It is a pattern for text search. Example: /\d+/ finds digits.
 
 # Bits and bytes
