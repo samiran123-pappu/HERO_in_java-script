@@ -14,7 +14,6 @@
 ### It is a pattern for text search. Example: /\d+/ finds digits.
 
 # Bits and bytes
-
 ## Bit = smallest unit (just 0 or 1)
 ## Byte = 8 bits
 
