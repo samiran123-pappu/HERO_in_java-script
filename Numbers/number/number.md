@@ -15,14 +15,15 @@ Bits and bytes
 
 Bit = smallest unit (just 0 or 1)
 Byte = 8 bits
-
-Memory sizes (easy mental ladder)
+```
+### Memory sizes (easy mental ladder)
 
 1 KB = 1024 bytes
 1 MB = 1024 KB
 1 GB = 1024 MB
 1 TB = 1024 GB
-```
+
+
 ## Easy memory trick
 ```bash
 Binary = 2, Decimal = 10, Hex = 16
