@@ -15,7 +15,7 @@ Heterogeneous: Arrays can store elements of different data types (numbers, strin
 ```
 
 `Spaces and line breaks are not important. A declaration can span multiple lines:`
-`You can also create an empty array, and provide elements later:`
+#### You can also create an empty array, and provide elements later:
 ```bash
 Example
 const cars = [];
