@@ -5,15 +5,6 @@ It is a common practice to declare arrays with the const keyword.
 Learn more about const with arrays in the chapter: JS Array Const.
 ```
 
-
-
-
-
-
-
-
-
-
 #  Note2:
 ```bash
  Array indexes start with 0.
