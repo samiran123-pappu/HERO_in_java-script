@@ -13,3 +13,16 @@ Dynamic size: Arrays can grow or shrink as elements are added or removed.
 
 Heterogeneous: Arrays can store elements of different data types (numbers, strings, objects and other arrays).
 ```
+
+`Spaces and line breaks are not important. A declaration can span multiple lines:`
+`You can also create an empty array, and provide elements later:`
+```bash
+Example
+const cars = [];
+cars[0]= "Saab";
+cars[1]= "Volvo";
+cars[2]= "BMW";
+```
+
+
+
