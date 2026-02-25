@@ -63,7 +63,7 @@ console.log("6", plainDate.month);
 // Property	Description
 
 // calendarID	Calendar system identifier ("iso8601")
-const calendarID = plainDate.calendarID;
+const calendarID = plainDate.calendarId;
 console.log("7", calendarID);
 // day	The day as an integer (1-31)
 const day = plainDate.day;
@@ -105,7 +105,7 @@ const monthCode = plainDate.monthCode;
 console.log("18", monthCode);
 
 // monthsInYear	The total number of months in that year
-const monthsInYear = plainDate.monthsInYear;
+const monthsInYear = plainDate.monthsInYear
 console.log("19", monthsInYear);
 
 // weekOfYear	The week number within the year
