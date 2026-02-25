@@ -49,3 +49,19 @@ Return value is a string.
 443.21202213243331123242 is the number written in base 5.
 typeof a is string.
 ```
+
+## which is
+```bash
+Exactly. For your base-5 result 443.21202213243331123242:
+
+Integer part:
+443₅ = 4×5² + 4×5¹ + 3×5⁰ = 100 + 20 + 3 = 123
+
+Fraction part:
+.212022...₅ = 2×5⁻¹ + 1×5⁻² + 2×5⁻³ + 0×5⁻⁴ + 2×5⁻⁵ + ...
+= 2/5 + 1/25 + 2/125 + 0/625 + 2/3125 + ...
+≈ 0.45678999
+
+So overall:
+443.21202213243331123242₅ ≈ 123.45678999₁₀.
+```
