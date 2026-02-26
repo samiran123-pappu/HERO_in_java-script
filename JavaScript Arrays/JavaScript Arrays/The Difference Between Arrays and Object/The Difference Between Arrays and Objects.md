@@ -12,3 +12,4 @@ JavaScript does not support associative arrays.
 You should use objects when you want the element names to be strings (text).
 You should use arrays when you want the element names to be numbers.
 ```
+
