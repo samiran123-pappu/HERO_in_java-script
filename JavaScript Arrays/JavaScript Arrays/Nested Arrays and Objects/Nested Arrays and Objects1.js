@@ -10,9 +10,9 @@ const myObj = {
 }
 
 for (let i in myObj.cars) {
-  x +=  myObj.cars[i].name 
+x += "[" +  myObj.cars[i].name + "]";
   for (let j in myObj.cars[i].models) {
-    x += myObj.cars[i].models[j] + "," 
+    x += "{" + myObj.cars[i].models[j] + "," +"}";
   }
 }
 console.log(x);
