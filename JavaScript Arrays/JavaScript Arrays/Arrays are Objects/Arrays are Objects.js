@@ -6,5 +6,14 @@
 // Arrays use numbers to access its "elements". In this example, person[0] returns John:
 
 
+// Array:
 const person = ["John", "Doe", 46];
 console.log(person[0]);
+
+// Object:
+const personObject = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 46
+};
+console.log(personObject.firstName);
