@@ -53,3 +53,16 @@ Objects use names to access its "members". In this example, person.firstName ret
 ```bash
 const person = {firstName:"John", lastName:"Doe", age:46};
 ```
+
+
+# Array Elements Can Be Objects
+```bash
+JavaScript variables can be objects. Arrays are special kinds of objects.
+
+Because of this, you can have variables of different types in the same Array.
+
+You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array:
+```
+## myArray[0] = Date.now;
+## myArray[1] = myFunction;
+## myArray[2] = myCars;
