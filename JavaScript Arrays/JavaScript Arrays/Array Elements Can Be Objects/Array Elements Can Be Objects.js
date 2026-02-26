@@ -7,6 +7,7 @@
 
 const myArray = [];
 const myFunction = function() { return "Hello"; }
+const myCars = ["Saab", "Volvo", "BMW"];
 
 myArray[0] = Date.now;
 myArray[1] = myFunction;
