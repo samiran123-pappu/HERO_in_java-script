@@ -147,22 +147,22 @@ person[0];         // Will return undefined
 # const points = [40];
 # is not the same as:
 
-###### const points = new Array(40);
-###### // Create an array with one element:
-###### const points = [40];
-###### // Create an array with 40 undefined elements:
-###### const points = new Array(40);  
-###### How to Recognize an Array
-###### A common question is: How do I know if a variable is an array?
+#### const points = new Array(40);
+#### // Create an array with one element:
+#### const points = [40];
+#### // Create an array with 40 undefined elements:
+#### const points = new Array(40);  
+#### How to Recognize an Array
+#### A common question is: How do I know if a variable is an array?
 
-###### The problem is that the JavaScript operator typeof returns "object":
+#### The problem is that the JavaScript operator typeof returns "object":
 
-###### const fruits = ["Banana", "Orange", "Apple"];
-###### let type = typeof fruits;
-###### The typeof operator returns object because a JavaScript array is an object.
+#### const fruits = ["Banana", "Orange", "Apple"];
+#### let type = typeof fruits;
+#### The typeof operator returns object because a JavaScript array is an object.
 
-###### Solution 1:
-###### To solve this problem ECMAScript 5 (JavaScript 2009) defined a new method Array.isArray():
+#### Solution 1:
+#### To solve this problem ECMAScript 5 (JavaScript 2009) defined a new method Array.isArray():
 
 #### Array.isArray(fruits);
 #### Solution 2:
