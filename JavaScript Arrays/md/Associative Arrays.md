@@ -11,10 +11,11 @@
 
 
 # javascript
-### onst userMap = new Map();
-### userMap.set("name", "Alex");
-### console.log(userMap.get("name")); // Output: Alex
-
+```bash
+ onst userMap = new Map();
+ userMap.set("name", "Alex");
+ console.log(userMap.get("name")); // Output: Alex
+```
 
 
 
