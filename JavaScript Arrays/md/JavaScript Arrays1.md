@@ -166,7 +166,7 @@ person[0];         // Will return undefined
 
 #### Array.isArray(fruits);
 #### Solution 2:
-#### he instanceof operator returns true if an object is created by a given constructor:
+#### The instanceof operator returns true if an object is created by a given constructor:
 ```bash
 const fruits = ["Banana", "Orange", "Apple"];
 
