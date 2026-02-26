@@ -29,8 +29,8 @@ const points = [];
 const points = new Array(40, 100, 1, 5, 25, 10);
 const points = [40, 100, 1, 5, 25, 10];
 ```
+# The new keyword can produce some unexpected results:
 ```bash
-The new keyword can produce some unexpected results:
 
 // Create an array with three elements:
 const points = new Array(40, 100, 1);
