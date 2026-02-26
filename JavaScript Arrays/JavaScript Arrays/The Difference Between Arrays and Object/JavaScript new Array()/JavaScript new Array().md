@@ -38,11 +38,15 @@ const points = new Array(40, 100, 1);
 const points = new Array(40, 100);
 // Create an array with one element ???
 const points = new Array(40);  
-A Common Error
+```
+# A Common Error
+```bash
 const points = [40];
 is not the same as:
 
 const points = new Array(40);
+```
+```bash
 // Create an array with one element:
 const points = [40];
 // Create an array with 40 undefined elements:
