@@ -67,10 +67,6 @@ You can have objects in an Array. You can have functions in an Array. You can ha
 ## const myArray = [];
 ## const myFunction = function() { return "Hello"; }
 ## const myCars = ["Saab", "Volvo", "BMW"];
-
-## myArray[0] = Date.now;
-## myArray[1] = myFunction;
-## myArray[2] = myCars;
 ## myArray[0] = Date.now;
 ## myArray[1] = myFunction;
 ## myArray[2] = myCars;
