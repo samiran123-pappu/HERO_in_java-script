@@ -43,3 +43,13 @@ But, JavaScript arrays are best described as arrays.
 
 Arrays use numbers to access its "elements". In this example, person[0] returns John:
 ```
+
+# Array:
+```bash
+const person = ["John", "Doe", 46];
+Objects use names to access its "members". In this example, person.firstName returns John:
+```
+# Object:
+```bash
+const person = {firstName:"John", lastName:"Doe", age:46};
+```
