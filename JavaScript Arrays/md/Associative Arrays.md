@@ -1,11 +1,11 @@
 # python
-### Define with curly braces
+#### Define with curly braces
 ## user = {"name": "Alex", "age": 25}
 
-### Access by name
+#### Access by name
 ## print(user["name"])  # Output: Alex
 
-### Add new named index
+#### Add new named index
 ## user["email"] = "alex@example.com"
 
 
