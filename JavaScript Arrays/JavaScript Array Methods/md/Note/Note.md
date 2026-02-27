@@ -14,3 +14,27 @@ This is not possible in JavaScript, because [] is used for accessing both arrays
 
 The at() method was introduced in ES2022 to solve this problem.
 ```
+
+# Note
+```bash
+The concat() method does not change the existing arrays. It always returns a new array.
+The concat() method can take any number of array arguments.
+Example (Merging Three Arrays)
+```
+
+
+
+
+
+
+
+
+
+
+
+```javascript
+const arr1 = ["Cecilie", "Lone"];
+const arr2 = ["Emil", "Tobias", "Linus"];
+const arr3 = ["Robin", "Morgan"];
+const myChildren = arr1.concat(arr2, arr3);
+```
