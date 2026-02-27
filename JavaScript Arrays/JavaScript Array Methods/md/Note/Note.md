@@ -53,3 +53,15 @@ const fruits1 = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Lemon"];
 fruits1.copyWithin(2, 1, 2);
 console.log(fruits1);
 ```
+
+```bash
+JavaScript Array delete()
+Warning !
+Using delete() leaves undefined holes in the array.
+
+Use pop() or shift() instead.
+
+Example
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+delete fruits[0];
+```
