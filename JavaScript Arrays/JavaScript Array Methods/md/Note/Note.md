@@ -38,3 +38,18 @@ const arr2 = ["Emil", "Tobias", "Linus"];
 const arr3 = ["Robin", "Morgan"];
 const myChildren = arr1.concat(arr2, arr3);
 ```
+
+
+# Note
+```bash
+The copyWithin() method overwrites the existing values.
+
+The copyWithin() method does not add items to the array.
+
+The copyWithin() method does not change the length of the array.
+
+
+const fruits1 = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Lemon"];
+fruits1.copyWithin(2, 1, 2);
+console.log(fruits1);
+```
