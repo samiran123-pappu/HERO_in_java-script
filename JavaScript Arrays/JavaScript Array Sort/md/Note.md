@@ -96,5 +96,8 @@ console.log("Home made Max():", homeMax(nums5));
 
 # Note
 ```bash
-Basically see basically without the function like like inside the method without the function it would probably consider the letters or the numbers with the ascending orders but with the function inside you will consider the values
+Basically see basically without the function like like inside the method without the function it would probably 
+```
+```bash
+consider the letters or the numbers with the ascending orders but with the function inside you will consider the values
 ```
