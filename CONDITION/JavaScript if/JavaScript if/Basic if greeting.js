@@ -1,0 +1,8 @@
+﻿const hour = 14;
+let greeting = "";
+
+if (hour < 18) {
+  greeting = "Good day";
+}
+
+console.log(greeting);
