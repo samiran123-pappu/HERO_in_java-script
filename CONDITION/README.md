@@ -14,3 +14,7 @@ Each topic has:
 - `md/Note.md` for concept notes
 - `<TopicName>/` folder with focused `.js` examples
 - matching `.html` files for browser runs
+
+## Legacy
+- Legacy content is preserved in `OLD/`.
+- Use the `JavaScript ...` folders as the primary/current structure.
