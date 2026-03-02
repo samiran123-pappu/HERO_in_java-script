@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Date Get Methods</h2>
+  <p id="demo"></p>
+  <script>
+    const d = new Date();
+    document.getElementById("demo").innerHTML =
+      `Year: ${d.getFullYear()}<br>` +
+      `Month: ${d.getMonth()}<br>` +
+      `Date: ${d.getDate()}<br>` +
+      `Day: ${d.getDay()}<br>` +
+      `UTC Year: ${d.getUTCFullYear()}<br>` +
+      `Epoch ms: ${d.getTime()}`;
+  </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Create Date Objects</h2>
+  <p id="demo"></p>
+  <script>
+    const output = [];
+    output.push(new Date().toString());
+    output.push(new Date("2022-03-25").toString());
+    output.push(new Date(2018, 11, 24, 10, 33, 30, 0).toString());
+    output.push(new Date(100000000000).toString());
+    document.getElementById("demo").innerHTML = output.join("<br>");
+  </script>
+</body>
+</html>

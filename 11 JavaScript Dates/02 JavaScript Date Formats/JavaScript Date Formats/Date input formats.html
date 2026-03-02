@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Date Input Formats</h2>
+  <p id="demo"></p>
+  <script>
+    const lines = [
+      new Date("2015-03-25").toString(),
+      new Date("03/25/2015").toString(),
+      new Date("Mar 25 2015").toString(),
+      new Date(Date.parse("March 21, 2012")).toString()
+    ];
+    document.getElementById("demo").innerHTML = lines.join("<br>");
+  </script>
+</body>
+</html>

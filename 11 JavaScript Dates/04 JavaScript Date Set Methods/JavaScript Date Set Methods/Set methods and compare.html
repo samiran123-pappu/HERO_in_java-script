@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Date Set Methods</h2>
+  <p id="demo"></p>
+  <script>
+    const d = new Date("January 01, 2025");
+    d.setDate(d.getDate() + 50);
+    d.setHours(22, 10, 20);
+
+    const today = new Date();
+    const someday = new Date();
+    someday.setFullYear(2100, 0, 14);
+
+    document.getElementById("demo").innerHTML =
+      `Modified date: ${d.toString()}<br>` +
+      (someday > today ? "Today is before January 14, 2100." : "Today is after January 14, 2100.");
+  </script>
+</body>
+</html>
