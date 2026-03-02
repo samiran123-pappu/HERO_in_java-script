@@ -1,11 +1,11 @@
 ﻿# 06 JavaScript Arrays
 
-Topic index:
-1. JavaScript Array Const
-2. JavaScript Array Iterations
-3. JavaScript Array Methods
-4. JavaScript Array Reference
-5. JavaScript Array Search
-6. JavaScript Array Sort
-7. JavaScript Arrays
-8. md
+Structured topics:
+1. 00 Notes
+2. 01 JavaScript Arrays Basics
+3. 02 JavaScript Array Methods
+4. 03 JavaScript Array Search
+5. 04 JavaScript Array Sort
+6. 05 JavaScript Array Iterations
+7. 06 JavaScript Array Const
+8. 07 JavaScript Array Reference

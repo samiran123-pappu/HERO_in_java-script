@@ -1,14 +1,8 @@
-﻿# Variables
+﻿# 02 JavaScript Variables
 
-Primary structured topics:
-1. JavaScript Variables
-2. JavaScript Let
-3. JavaScript Const
-4. JavaScript Types
-
-Each topic includes:
-- `md/Note.md`
-- `<TopicName>/` with focused `.js` and `.html` examples
-- `index.html` for quick navigation
-
-Legacy material is preserved in `OLD/`.
+Structured topics:
+1. 01 JavaScript Variables Basics
+2. 02 JavaScript Let
+3. 03 JavaScript Const
+4. 04 JavaScript Types
+5. 98 Legacy Imports

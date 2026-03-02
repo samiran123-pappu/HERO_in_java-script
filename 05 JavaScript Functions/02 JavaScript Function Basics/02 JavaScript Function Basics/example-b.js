@@ -1,2 +1,3 @@
-﻿const nums=[1,2,3];
-console.log(nums.map(n=>n*2));
+const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter((n) => n % 2 === 0);
+console.log(evenNumbers);

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Temporal.PlainDate</h1>
+    <h2>Get Current Date for a Time Zone</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const today = Temporal.Now.plainDateISO('Asia/Kolkata');
+        document.getElementById("demo").innerHTML = today.toString();
+    </script>
+
+</body>
+
+</html>

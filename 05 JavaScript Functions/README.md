@@ -1,6 +1,6 @@
 ﻿# 05 JavaScript Functions
 
-## Topics
+Structured topics:
 1. 01 JavaScript Functions
 2. 02 JavaScript Function Basics
 3. 03 Invoking JavaScript Functions

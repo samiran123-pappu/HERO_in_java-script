@@ -1,13 +1,7 @@
-﻿# Syntax
+﻿# 01 JavaScript Syntax
 
-Primary structured topics:
-1. JavaScript Syntax
-2. JavaScript Statements
-3. JavaScript Comments
-
-Each topic includes:
-- `md/Note.md`
-- `<TopicName>/` with focused `.js` and `.html` examples
-- `index.html` for quick access
-
-Legacy content is preserved in `OLD/`.
+Structured topics:
+1. 01 JavaScript Syntax Basics
+2. 02 JavaScript Statements
+3. 03 JavaScript Comments
+4. 98 Legacy Imports

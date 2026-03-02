@@ -1,16 +1,9 @@
-﻿# JavaScript Strings
+﻿# 07 JavaScript Strings
 
-Primary topics:
-1. JavaScript Strings
-2. JavaScript String Templates
-3. JavaScript String Methods
-4. JavaScript String Search
-5. JavaScript String Reference
-
-Each topic includes:
-- `md/Note.md`
-- topic folder with focused `.js` examples
-- matching `.html` runners
-- `index.html`
-
-Legacy content is preserved in `OLD/`.
+Structured topics:
+1. 01 JavaScript Strings Basics
+2. 02 JavaScript String Templates
+3. 03 JavaScript String Methods
+4. 04 JavaScript String Search
+5. 05 JavaScript String Reference
+6. 98 Legacy Imports
