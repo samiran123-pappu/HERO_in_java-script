@@ -2,42 +2,54 @@
 
 Track: **03 JavaScript Variables**
 
-## Core Idea
+## The `const` Keyword
 
-`const` creates a variable that cannot be reassigned after declaration.
+Introduced in ES6 (2015), `const` stands for **constant**.
+It behaves like `let` (block-scoped), but with one key difference: **it cannot be reassigned**.
 
-```js
-const pi = 3.14;
-// pi = 4; // error
-```
+## Rule of Thumb
 
-## Important Clarification
+Always declare a variable with `const` unless you know that the value will change.
 
-For objects/arrays, `const` locks the binding, not internal content.
+## Reassignment is Forbidden
 
 ```js
-const arr = [1,2];
-arr.push(3); // allowed
-// arr = [9]; // not allowed
+const PI = 3.14159;
+PI = 3.14;      // TypeError: Assignment to constant variable.
+PI = PI + 10;   // TypeError
 ```
 
-## Rules
+## Must be Assigned on Declaration
 
-- Must be initialized immediately
-- Block-scoped
-- Cannot be redeclared in same scope
+```js
+const PI;       // SyntaxError: Missing initializer in const declaration
+PI = 3.14159;
+```
 
-## Quick Check
+## Constant Objects and Arrays
 
-- Why can `const` arrays still be mutated?
-- When should you choose `const` over `let`?
-## Learning Path
+This is a common point of confusion. `const` does not define a constant **value**. It defines a constant **reference** to a value.
 
-- Prerequisite: **JavaScript Let**
-- Next Topic: **JavaScript Types**
+This means you **can** change the properties of a constant object or elements of a constant array.
 
-## Mini Exercises
+```js
+const cars = ["Saab", "Volvo", "BMW"];
 
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+// You can change an element:
+cars[0] = "Toyota";
+
+// You can add an element:
+cars.push("Audi");
+
+// But you can NOT reassign the array:
+cars = ["Toyota", "Volvo", "Audi"];    // ERROR
+```
+
+## Quick Self-Check
+
+1.  Can you reassign a `const` variable? (No)
+2.  Can you change an item inside a `const` array? (Yes)
+3.  When should you use `const`? (By default, for everything that doesn't need to change)
+
+---
+*Next Topic: Var.*

@@ -4,34 +4,35 @@ Track: **10 JavaScript Objects**
 
 ## Core Idea
 
-Inside an object method, `this` points to the object that called that method.
+Objects model related state and behavior in one structure.
+
+## Deep Explanation
+
+Properties, methods, prototypes, and accessors form a major JavaScript foundation.
+
+## Worked Example
 
 ```js
-const person = {
-  name: "John",
-  hello() { return "Hello " + this.name; }
-};
+const user = { name:"Ava", greet(){ return "Hi " + this.name; } };
 ```
 
-## Why It Exists
+## Common Mistakes
 
-It lets one method work with different objects without rewriting logic.
+Losing `this` and confusing own vs inherited properties.
 
-## Important Distinction
+## Real-World Use
 
-Arrow functions do not create their own `this`.
-For object methods, prefer regular function/method syntax.
+Objects drive API payloads, app state, and domain models.
 
-## Quick Check
+## How To Study This Topic
 
-- Can you explain `person.fullName` vs `person.fullName()`?
-## Learning Path
+- Predict output before running.
+- Compare `.js` and `.html` behavior.
+- Change one line and explain the result.
+- Reduce failures to smallest reproducible snippet.
 
-- Prerequisite: **JavaScript Object Methods**
-- Next Topic: **JavaScript Display Objects**
+## Quick Self-Check
 
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+- Can I explain this concept clearly?
+- Can I code a minimal example from memory?
+- Can I identify one bug pattern and fix?

@@ -1,40 +1,30 @@
-# JavaScript Scope Basics
+# Why Temporal?
 
-Track: **11 JavaScript Scope**
+Track: **13 JavaScript Temporal**
 
-## Core Idea
+## The Problem with `Date`
 
-- Scope defines where a variable is visible and where it can be safely used.
-- Hoisting affects declarations; strict mode prevents many silent JavaScript mistakes.
+The legacy `Date` object in JavaScript (dating back to 1995) has several well-known issues:
 
-## Syntax Patterns
+1.  **Mutability**: `Date` objects are mutable. If you pass a date to a function and that function changes it, your original date is changed too.
+2.  **Parsing**: `Date.parse()` is unreliable and inconsistent across browsers.
+3.  **0-Indexed Months**: January is 0, December is 11. This is a constant source of off-by-one errors.
+4.  **No Support for Non-UTC Timezones**: `Date` only knows UTC and the user's local time. It cannot represent "10:00 AM in Tokyo" if the user is in New York.
+5.  **Computation**: Adding "1 month" is hard because months have different lengths.
 
-- `let` and `const` are block-scoped. `var` is function-scoped.
-- Use `"use strict";` at script/function top to enable strict mode rules.
+## Enter `Temporal`
 
-## Common Mistakes
+`Temporal` is a modern, ergonomic, and robust date/time API.
 
-- Assuming `var` is block scoped, or using variables before declaration and hitting TDZ errors.
-
-## How To Study This Topic
-
-- Read the HTML example heading and predict the expected result first.
-- Run the `.js` file and verify each variable/value transition.
-- Open the `.html` file and compare visible output with your prediction.
-- Change one line and rerun to observe cause/effect clearly.
+- **Immutable**: All Temporal objects are immutable. Operations like `.add()` return a new object.
+- **Type-Safe**: It distinguishes between a "Calendar Date" (just a date) and an "Instant" (exact moment in time).
+- **ISO-8601**: Strict adherence to standards.
 
 ## Quick Self-Check
 
-- Can I explain this topic in one sentence without reading code?
-- Can I write a minimal working example from memory?
-- Can I name one common bug and how to avoid it?
-## Learning Path
+1.  Is the legacy `Date` object mutable or immutable? (Mutable)
+2.  What is the index of January in the legacy `Date` object? (0)
+3.  Does `Temporal` modify the object when you add time? (No, it returns a new object)
 
-- Prerequisite: **None (start here)**
-- Next Topic: **JavaScript Code Blocks**
-
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+---
+*Next Topic: Temporal Types.*

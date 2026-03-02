@@ -4,37 +4,49 @@ Track: **05 JavaScript Conditionals**
 
 ## Core Idea
 
-- Conditional flow runs different code paths based on true/false results.
-- Choose the simplest construct for readability (`if`, `switch`, ternary where short).
+The ternary operator is a compact `if...else` expression.
 
-## Syntax Patterns
+Syntax:
 
-- Ternary format: `condition ? whenTrue : whenFalse`.
-- `switch` compares with strict equality and usually needs `break`.
+```js
+condition ? valueIfTrue : valueIfFalse
+```
+
+Example:
+
+```js
+let text = (age < 18) ? "Minor" : "Adult";
+```
+
+## When to Use
+
+Use ternary for short, readable inline decisions.
+
+Good use:
+
+```js
+const discount = isMember ? 0.2 : 0;
+```
+
+Avoid for long nested logic where readability drops.
+
+## Nested Ternary (Use Carefully)
+
+Possible but can become hard to read quickly.
+Prefer regular `if...else` when branching grows.
 
 ## Common Mistakes
 
-- Overusing nested ternaries or forgetting `break` in switch cases.
+- deeply nested ternary expressions
+- using ternary for side effects instead of values
+- missing parentheses in complex expressions
 
-## How To Study This Topic
+## Real-World Use
 
-- Read the HTML example heading and predict the expected result first.
-- Run the `.js` file and verify each variable/value transition.
-- Open the `.html` file and compare visible output with your prediction.
-- Change one line and rerun to observe cause/effect clearly.
+Useful inside template strings, quick assignments, and rendering labels.
 
 ## Quick Self-Check
 
-- Can I explain this topic in one sentence without reading code?
-- Can I write a minimal working example from memory?
-- Can I name one common bug and how to avoid it?
-## Learning Path
-
-- Prerequisite: **JavaScript Switch Statement**
-- Next Topic: **JavaScript Booleans**
-
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+- Can you convert ternary to `if...else` and back?
+- When should ternary be avoided?
+- Can you spot unreadable nested ternary code?

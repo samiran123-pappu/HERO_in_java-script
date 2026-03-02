@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JavaScript Const - Index</title>
+    <meta charset="UTF-8">
+    <title>JS Var</title>
+    <style>body{font-family:sans-serif;padding:20px;line-height:1.6;}</style>
 </head>
 <body>
-  <h1>JavaScript Const</h1>
-  <h2>Example</h2>
-  <p>This page demonstrates: JavaScript Const.</p>
-  <ul>
-    <li><a href="./Const array mutable items.html">Const array mutable items</a></li>
-    <li><a href="./Const block scope.html">Const block scope</a></li>
-    <li><a href="./Const cannot reassign.html">Const cannot reassign</a></li>
-    <li><a href="./Const hoisting behavior.html">Const hoisting behavior</a></li>
-    <li><a href="./Const must assign.html">Const must assign</a></li>
-    <li><a href="./Const object mutable properties.html">Const object mutable properties</a></li>
-  </ul>
+
+    <h1>JavaScript Var</h1>
+    <p>Variables defined with <b>var</b> do NOT have Block Scope.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        {
+            var x = 2;
+        }
+        // x can be used here
+        document.getElementById("demo").innerHTML = "Value of x is " + x;
+    </script>
+
 </body>
 </html>
-

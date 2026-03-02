@@ -2,39 +2,64 @@
 
 Track: **11 JavaScript Scope**
 
-## Core Idea
+## Hoisting Concept
 
-- Scope defines where a variable is visible and where it can be safely used.
-- Hoisting affects declarations; strict mode prevents many silent JavaScript mistakes.
+Hoisting means JavaScript handles declarations before execution of the code body.
 
-## Syntax Patterns
+Important: declarations are hoisted, **initializations are not**.
 
-- `let` and `const` are block-scoped. `var` is function-scoped.
-- Use `"use strict";` at script/function top to enable strict mode rules.
+## `var` Hoisting
+
+`var` declarations are hoisted and initialized as `undefined`.
+
+```js
+console.log(x); // undefined
+var x = 5;
+```
+
+Conceptually similar to:
+
+```js
+var x;
+console.log(x);
+x = 5;
+```
+
+## `let` and `const` Hoisting
+
+`let`/`const` are also hoisted, but uninitialized until declaration line.
+This period is Temporal Dead Zone (TDZ).
+
+```js
+console.log(a); // ReferenceError
+let a = 1;
+```
+
+## Initialization Not Hoisted
+
+```js
+var y = 7;
+console.log(y); // 7
+```
+
+If you read before assignment line, value may be `undefined` (`var`) or error (`let`/`const`).
+
+## Best Practice
+
+Declare variables before use.
+Even if you understand hoisting, this keeps code clear and bug-resistant.
 
 ## Common Mistakes
 
-- Assuming `var` is block scoped, or using variables before declaration and hitting TDZ errors.
+- assuming `let` behaves like `var` before declaration
+- depending on hoisting intentionally instead of writing explicit order
 
-## How To Study This Topic
+## Real-World Use
 
-- Read the HTML example heading and predict the expected result first.
-- Run the `.js` file and verify each variable/value transition.
-- Open the `.html` file and compare visible output with your prediction.
-- Change one line and rerun to observe cause/effect clearly.
+Understanding hoisting speeds debugging when values appear `undefined` unexpectedly.
 
 ## Quick Self-Check
 
-- Can I explain this topic in one sentence without reading code?
-- Can I write a minimal working example from memory?
-- Can I name one common bug and how to avoid it?
-## Learning Path
-
-- Prerequisite: **JavaScript Code Blocks**
-- Next Topic: **JavaScript Use Strict**
-
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+- Why does `var` show `undefined` but `let` throws?
+- What is TDZ in simple words?
+- Why are initializations not hoisted?

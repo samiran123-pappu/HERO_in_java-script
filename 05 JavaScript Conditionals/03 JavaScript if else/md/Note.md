@@ -4,37 +4,48 @@ Track: **05 JavaScript Conditionals**
 
 ## Core Idea
 
-- Conditional flow runs different code paths based on true/false results.
-- Choose the simplest construct for readability (`if`, `switch`, ternary where short).
+`if...else` chooses exactly one of two branches.
 
-## Syntax Patterns
+```js
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+```
 
-- Ternary format: `condition ? whenTrue : whenFalse`.
-- `switch` compares with strict equality and usually needs `break`.
+## else if Chains
+
+Use `else if` for multiple checks in priority order.
+First true condition wins, then chain stops.
+
+```js
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+```
+
+## Ordering Matters
+
+Place most specific/high-priority conditions first.
+Wrong order can make some branches unreachable.
 
 ## Common Mistakes
 
-- Overusing nested ternaries or forgetting `break` in switch cases.
+- incorrect condition order in `else if` chains
+- missing final fallback `else` when needed
+- duplicated condition checks across branches
 
-## How To Study This Topic
+## Real-World Use
 
-- Read the HTML example heading and predict the expected result first.
-- Run the `.js` file and verify each variable/value transition.
-- Open the `.html` file and compare visible output with your prediction.
-- Change one line and rerun to observe cause/effect clearly.
+Great for graded rules, threshold logic, and fallback flows.
 
 ## Quick Self-Check
 
-- Can I explain this topic in one sentence without reading code?
-- Can I write a minimal working example from memory?
-- Can I name one common bug and how to avoid it?
-## Learning Path
-
-- Prerequisite: **JavaScript if**
-- Next Topic: **JavaScript Switch Statement**
-
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+- Can you explain why chain order matters?
+- Can you identify unreachable branch examples?
+- Can you add a proper fallback branch?

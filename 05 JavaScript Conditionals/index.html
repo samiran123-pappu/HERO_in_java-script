@@ -1,11 +1,27 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>03 JavaScript Conditionals</title></head><body><h1>03 JavaScript Conditionals</h1>
-  <h2>Example</h2>
-  <p>This page demonstrates: 03 JavaScript Conditionals.</p><ul><li><a href='./01 JavaScript Conditionals Basics/'>01 JavaScript Conditionals Basics</a></li>
-<li><a href='./02 JavaScript if/'>02 JavaScript if</a></li>
-<li><a href='./03 JavaScript if else/'>03 JavaScript if else</a></li>
-<li><a href='./04 JavaScript Switch Statement/'>04 JavaScript Switch Statement</a></li>
-<li><a href='./05 JavaScript Ternary Operator/'>05 JavaScript Ternary Operator</a></li>
-<li><a href='./06 JavaScript Booleans/'>06 JavaScript Booleans</a></li>
-<li><a href='./07 JavaScript Logical Operators/'>07 JavaScript Logical Operators</a></li>
-<li><a href='./98 Legacy Imports/'>98 Legacy Imports</a></li></ul></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Booleans</title>
+    <style>body{font-family:sans-serif;padding:20px;line-height:1.6;}</style>
+</head>
+<body>
 
+    <h1>JavaScript Booleans</h1>
+    <p>The Boolean() function can be used to find out if an expression is true or false.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let b1 = Boolean(100);
+        let b2 = Boolean(3.14);
+        let b3 = Boolean("");
+        let b4 = Boolean(0);
+
+        document.getElementById("demo").innerHTML =
+        "100 is " + b1 + "<br>" +
+        "Empty string is " + b3 + "<br>" +
+        "Zero is " + b4;
+    </script>
+</body>
+</html>

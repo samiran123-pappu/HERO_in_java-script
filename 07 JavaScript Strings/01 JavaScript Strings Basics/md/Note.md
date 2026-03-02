@@ -2,39 +2,85 @@
 
 Track: **07 JavaScript Strings**
 
-## Core Idea
+## What is a String?
 
-- Strings are immutable. Methods return new strings instead of editing the original.
-- Template literals improve readability for interpolation and multi-line text.
+A string in JavaScript is a primitive data type used to represent a sequence of characters. It's how you work with text.
 
-## Syntax Patterns
+```js
+let greeting = "Hello, World!";
+let name = 'Anna';
+```
 
-- Use backticks and `${...}` for interpolation.
-- Common methods: `slice`, `replace`, `split`, `trim`, `includes`, `startsWith`, `endsWith`.
+Strings can be created using single quotes (`'...'`), double quotes (`"..."`), or backticks (`` `...` ``).
+
+## Key Characteristics
+
+1.  **Immutable**: Once a string is created, its contents cannot be changed. Methods that seem to modify a string actually return a *new* string.
+    ```js
+    let str = "Hi";
+    str.toUpperCase(); // Returns "HI"
+    console.log(str);  // "Hi" (The original is unchanged)
+    str = str.toUpperCase(); // Reassignment is required to "update" it
+    console.log(str);  // "HI"
+    ```
+
+2.  **Zero-Indexed**: Characters in a string can be accessed by their numerical index, starting from 0.
+    ```js
+    let text = "JavaScript";
+    console.log(text[0]); // "J"
+    console.log(text[4]); // "S"
+    ```
+
+3.  **Length Property**: The `.length` property returns the number of characters in the string.
+    ```js
+    console.log("Hello".length); // 5
+    ```
+
+## Escape Characters
+
+The backslash (`\`) is used to "escape" special characters, giving them a different meaning.
+
+- `\'` - Single quote
+- `\"` - Double quote
+- `\\` - Backslash
+- `\n` - New line
+- `\t` - Tab
+
+```js
+let message = "She said, \"It's a beautiful day!\"\nLet's go out.";
+console.log(message);
+// She said, "It's a beautiful day!"
+// Let's go out.
+```
+
+## Strings as Objects (A Common Confusion)
+
+While strings are primitives, JavaScript temporarily wraps them in a `String` object when you try to access a property or method (like `.length` or `.toUpperCase()`). This is why you can call methods on a primitive.
+
+You should almost never create strings with `new String()` yourself, as it creates an object, not a primitive, which can lead to confusing behavior.
+
+```js
+let primitiveStr = "test";
+let objectStr = new String("test");
+
+typeof primitiveStr; // "string"
+typeof objectStr;    // "object"
+
+primitiveStr === objectStr; // false
+```
 
 ## Common Mistakes
 
-- Confusing string index behavior with arrays, and expecting in-place mutation.
+- Trying to modify a string by index (e.g., `myString[0] = 'h'`). This will fail silently because strings are immutable.
+- Confusing a string object (`new String("...")`) with a string primitive (`"..."`).
+- Forgetting that `.length` is a property, not a method (it's `str.length`, not `str.length()`).
 
-## How To Study This Topic
+## Real-World Use
 
-- Read the HTML example heading and predict the expected result first.
-- Run the `.js` file and verify each variable/value transition.
-- Open the `.html` file and compare visible output with your prediction.
-- Change one line and rerun to observe cause/effect clearly.
+Strings are everywhere: user names, passwords, addresses, article content, UI messages, file paths, and data interchange formats like JSON.
 
 ## Quick Self-Check
 
-- Can I explain this topic in one sentence without reading code?
-- Can I write a minimal working example from memory?
-- Can I name one common bug and how to avoid it?
-## Learning Path
-
-- Prerequisite: **None (start here)**
-- Next Topic: **JavaScript String Templates**
-
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+- What does it mean for a string to be "immutable"?
+- How do you get the last character of any string, regardless of its length?
+- Why is it generally a bad idea to use `new String("...")`?

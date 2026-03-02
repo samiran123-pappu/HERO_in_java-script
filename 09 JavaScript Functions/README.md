@@ -1,21 +1,34 @@
-﻿# 05 JavaScript Functions
+﻿# 09 JavaScript Functions
 
-Structured topics:
-1. 01 JavaScript Functions
-2. 02 JavaScript Function Basics
-3. 03 Invoking JavaScript Functions
-4. 04 JavaScript Function Parameters
-5. 05 JavaScript Function Return
-6. 06 JavaScript Function Arguments
-7. 07 JavaScript Function Expressions
-8. 08 JavaScript Arrow Functions
-9. 09 JavaScript Functions Quiz
-10. 10 JavaScript Function Definitions
-11. 11 JavaScript Callbacks
-12. 12 JavaScript this Keyword
-13. 13 JavaScript call() Method
-14. 14 JavaScript apply() Method
-15. 15 JavaScript bind() Method
-16. 16 JavaScript IIFE
-17. 17 JavaScript Closures
-18. 18 JavaScript Function Reference
+## Reusable Logic
+
+A function is a block of code designed to perform a particular task.
+A function is executed when "something" invokes it (calls it).
+
+## 📚 Topics
+
+1.  **[01 Function Basics](./01%20JavaScript%20Function%20Basics/index.html)**
+    *   Defining functions with `function` keyword.
+    *   Calling (invoking) functions.
+
+2.  **02 Parameters**
+    *   Passing data into functions.
+    *   Arguments vs Parameters.
+
+3.  **03 Return**
+    *   Getting values back from functions.
+    *   Stopping execution.
+
+4.  **04 Scope**
+    *   Local variables (inside function).
+    *   Global variables (outside function).
+    *   Variable lifetime.
+
+## 🔑 Key Takeaway
+
+- Functions allow you to write code once and use it many times.
+- Variables declared inside a function are **local** to that function.
+- A function stops running when it reaches a `return` statement.
+
+---
+*Open `index.html` to browse these topics interactively.*

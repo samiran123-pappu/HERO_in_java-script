@@ -2,39 +2,50 @@
 
 Track: **07 JavaScript Strings**
 
-## Core Idea
+## Finding Text
 
-- Strings are immutable. Methods return new strings instead of editing the original.
-- Template literals improve readability for interpolation and multi-line text.
+### `indexOf()`
 
-## Syntax Patterns
+Returns the index (position) of the **first** occurrence of a string in a string.
+Returns `-1` if the text is not found.
 
-- Use backticks and `${...}` for interpolation.
-- Common methods: `slice`, `replace`, `split`, `trim`, `includes`, `startsWith`, `endsWith`.
+```js
+let str = "Please locate where 'locate' occurs!";
+str.indexOf("locate"); // Returns 7
+```
 
-## Common Mistakes
+### `lastIndexOf()`
 
-- Confusing string index behavior with arrays, and expecting in-place mutation.
+Returns the index of the **last** occurrence.
 
-## How To Study This Topic
+```js
+str.lastIndexOf("locate"); // Returns 21
+```
 
-- Read the HTML example heading and predict the expected result first.
-- Run the `.js` file and verify each variable/value transition.
-- Open the `.html` file and compare visible output with your prediction.
-- Change one line and rerun to observe cause/effect clearly.
+## Checking Presence (ES6)
+
+### `includes()`
+
+Returns `true` if a string contains a specified value.
+
+```js
+text.includes("world"); // true
+```
+
+### `startsWith()` / `endsWith()`
+
+Checks if a string begins or ends with specified characters.
+
+```js
+text.startsWith("Hello"); // true
+text.endsWith("World");   // false
+```
 
 ## Quick Self-Check
 
-- Can I explain this topic in one sentence without reading code?
-- Can I write a minimal working example from memory?
-- Can I name one common bug and how to avoid it?
-## Learning Path
+1.  What does `indexOf` return if the text is not found? (-1)
+2.  Is `includes()` case-sensitive? (Yes)
+3.  Which method finds the *last* occurrence of a word? (`lastIndexOf`)
 
-- Prerequisite: **JavaScript String Methods**
-- Next Topic: **JavaScript String Reference**
-
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+---
+*End of Track 07.*

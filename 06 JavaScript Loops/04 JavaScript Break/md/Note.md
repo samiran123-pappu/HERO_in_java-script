@@ -4,38 +4,46 @@ Track: **06 JavaScript Loops**
 
 ## Core Idea
 
-`break` exits a loop or switch immediately.
-
-Use it when further iterations are unnecessary.
+`break` exits the nearest loop or switch immediately.
 
 ```js
-for (let i=0;i<10;i++) {
+for (let i = 0; i < 10; i++) {
   if (i === 3) break;
 }
 ```
 
+## In Switch Statements
+
+`break` prevents fall-through into next case.
+Without `break`, next cases run even if not intended.
+
 ## Labeled Break
 
-Can exit outer loops in nested scenarios:
+You can break out of outer loops using labels.
 
 ```js
-outer: for (...) {
+outer:
+for (...) {
   for (...) {
     break outer;
   }
 }
 ```
 
-## Quick Check
+Use labels carefully. They are powerful but can reduce readability when overused.
 
-- Can you explain difference between `break` and `continue`?
-## Learning Path
+## Common Mistakes
 
-- Prerequisite: **JavaScript While Loops**
-- Next Topic: **JavaScript Continue**
+- forgetting `break` in switch
+- using `break` where `continue` was intended
+- overusing labels for logic that could be refactored
 
-## Mini Exercises
+## Real-World Use
 
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+Useful when early exit saves time (first match found, invalid state detected, etc.).
+
+## Quick Self-Check
+
+- What is difference between `break` in loop and in switch?
+- When should labeled break be considered?
+- Can you rewrite a loop with early exit cleanly?

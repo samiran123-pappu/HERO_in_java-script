@@ -1,40 +1,43 @@
-# JavaScript Object Methods
+# JavaScript Date Set Methods
 
-Track: **10 JavaScript Objects**
+Track: **13 JavaScript Date**
 
-## Core Idea
+## Modifying Dates
 
-- Objects model related data/behavior with properties and methods.
-- Prototypes, accessors, and object utilities are key to mastering JavaScript design.
+Set methods are used to set a part of a date object.
 
-## Syntax Patterns
+- `setFullYear()`
+- `setMonth()`
+- `setDate()`
+- `setHours()`
+- `setMinutes()`
+- `setSeconds()`
 
-- Property access: dot (`obj.key`) and bracket (`obj["key"]`).
-- Iteration helpers: `Object.keys`, `Object.values`, `Object.entries`.
+```js
+const d = new Date();
+d.setFullYear(2020);
+```
 
-## Common Mistakes
+## Date Math
 
-- Losing `this` context, or confusing own properties with inherited properties.
+You can easily add days to a date using `setDate()`.
 
-## How To Study This Topic
+```js
+const d = new Date();
+d.setDate(d.getDate() + 50); // Adds 50 days
+```
 
-- Read the HTML example heading and predict the expected result first.
-- Run the `.js` file and verify each variable/value transition.
-- Open the `.html` file and compare visible output with your prediction.
-- Change one line and rerun to observe cause/effect clearly.
+JavaScript handles the overflow automatically (e.g., if you add 50 days to Dec 20th, it rolls over to the next year correctly).
 
-## Quick Self-Check
+## Comparing Dates
 
-- Can I explain this topic in one sentence without reading code?
-- Can I write a minimal working example from memory?
-- Can I name one common bug and how to avoid it?
-## Learning Path
+Dates can be compared using standard comparison operators (`>`, `<`).
 
-- Prerequisite: **JavaScript Object Properties**
-- Next Topic: **JavaScript this Keyword**
+```js
+if (today > someday) {
+  text = "Today is after someday";
+}
+```
 
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+---
+*End of Track 13.*

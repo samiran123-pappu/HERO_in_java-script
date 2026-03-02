@@ -2,39 +2,64 @@
 
 Track: **11 JavaScript Scope**
 
-## Core Idea
+## What is Strict Mode?
 
-- Scope defines where a variable is visible and where it can be safely used.
-- Hoisting affects declarations; strict mode prevents many silent JavaScript mistakes.
+`"use strict";` enables stricter JavaScript rules.
+It helps catch unsafe patterns early.
 
-## Syntax Patterns
+## How to Enable
 
-- `let` and `const` are block-scoped. `var` is function-scoped.
-- Use `"use strict";` at script/function top to enable strict mode rules.
+At script top (applies broadly):
+
+```js
+"use strict";
+```
+
+Inside function (local strict mode):
+
+```js
+function run() {
+  "use strict";
+}
+```
+
+## Why It Matters
+
+Strict mode turns silent mistakes into errors.
+
+Examples it blocks:
+
+- undeclared variable assignment
+- duplicate parameter names
+- writing to read-only properties
+- some unsafe legacy syntax
+
+## Scope Relevance
+
+Strict mode prevents accidental globals, which directly improves scope safety.
+
+```js
+"use strict";
+x = 10; // ReferenceError
+```
+
+## `this` Difference
+
+In strict mode, plain function call has `this === undefined`.
+In sloppy mode, it can become global object.
 
 ## Common Mistakes
 
-- Assuming `var` is block scoped, or using variables before declaration and hitting TDZ errors.
+- adding strict mode not at top of script/function
+- expecting old sloppy behavior to still work
 
-## How To Study This Topic
+## Real-World Use
 
-- Read the HTML example heading and predict the expected result first.
-- Run the `.js` file and verify each variable/value transition.
-- Open the `.html` file and compare visible output with your prediction.
-- Change one line and rerun to observe cause/effect clearly.
+Use strict mode for cleaner errors and safer refactoring.
+Most modern toolchains and module systems already enforce strict semantics.
 
 ## Quick Self-Check
 
-- Can I explain this topic in one sentence without reading code?
-- Can I write a minimal working example from memory?
-- Can I name one common bug and how to avoid it?
-## Learning Path
-
-- Prerequisite: **JavaScript Hoisting**
-- Next Topic: **JavaScript Scope Reference**
-
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+- Can you explain one bug that strict mode prevents?
+- Where must `"use strict";` be placed?
+- Why does strict mode help with scope issues?

@@ -2,32 +2,51 @@
 
 Track: **06 JavaScript Loops**
 
-## Core Idea
+## What is the `continue` Statement?
 
-`continue` skips current iteration and jumps to next one.
+The `continue` statement provides a way to skip the rest of the code in the current loop iteration and proceed directly to the next one. It doesn't terminate the loop entirely; it just jumps to the next cycle.
+
+### Example: Skipping an Iteration
 
 ```js
-for (let i=0;i<5;i++) {
-  if (i===2) continue;
+// Log only the odd numbers
+for (let i = 0; i < 10; i++) {
+  // If the number is even, skip to the next iteration
+  if (i % 2 === 0) {
+    continue;
+  }
+  // This code only runs for odd numbers
+  console.log(i);
 }
 ```
 
-Unlike `break`, it does not exit the loop completely.
+## Difference from Break
+
+- `break` => exit loop completely
+- `continue` => skip only this iteration
 
 ## Labeled Continue
 
 In nested loops, labels can redirect which loop continues.
+Use carefully to avoid unreadable control flow.
 
-## Quick Check
+## Good Usage Pattern
 
-- Can you describe when `continue` is clearer than wrapping code in `if`?
-## Learning Path
+Use `continue` to ignore invalid rows/items quickly.
+Keeps main processing path cleaner.
 
-- Prerequisite: **JavaScript Break**
-- Next Topic: **JavaScript Control Flow**
+## Common Mistakes
 
-## Mini Exercises
+- using `continue` where `break` was needed
+- hiding complex condition logic behind multiple `continue`s
+- creating hard-to-follow nested loop control
 
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+## Real-World Use
+
+Useful in filtering passes, validation loops, and skip-invalid-record pipelines.
+
+## Quick Self-Check
+
+- Can you explain `continue` in one sentence?
+- When does `continue` improve readability?
+- Can you identify overuse of continue in complex loops?

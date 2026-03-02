@@ -4,37 +4,50 @@ Track: **05 JavaScript Conditionals**
 
 ## Core Idea
 
-- Conditional flow runs different code paths based on true/false results.
-- Choose the simplest construct for readability (`if`, `switch`, ternary where short).
+Conditionals control which code path runs based on true/false results.
 
-## Syntax Patterns
+Without conditionals, programs can calculate values but cannot make decisions.
 
-- Ternary format: `condition ? whenTrue : whenFalse`.
-- `switch` compares with strict equality and usually needs `break`.
+## Main Conditional Tools
+
+- `if`
+- `if...else`
+- `if...else if...else`
+- `switch`
+- ternary operator `? :`
+
+## When to Use Which
+
+- Use `if` for a single condition.
+- Use `if...else` for two branches.
+- Use `else if` for multiple condition checks.
+- Use `switch` for many exact-value branches.
+- Use ternary for short inline choices.
+
+## Example
+
+```js
+let label = "Unknown";
+
+if (age >= 18) {
+  label = "Adult";
+} else {
+  label = "Minor";
+}
+```
 
 ## Common Mistakes
 
-- Overusing nested ternaries or forgetting `break` in switch cases.
+- writing deeply nested conditions without refactoring
+- choosing ternary for long complex logic (hard to read)
+- using `switch` where range checks are needed
 
-## How To Study This Topic
+## Real-World Use
 
-- Read the HTML example heading and predict the expected result first.
-- Run the `.js` file and verify each variable/value transition.
-- Open the `.html` file and compare visible output with your prediction.
-- Change one line and rerun to observe cause/effect clearly.
+Conditionals are used in validation, permissions, feature flags, pricing rules, and UI branching.
 
 ## Quick Self-Check
 
-- Can I explain this topic in one sentence without reading code?
-- Can I write a minimal working example from memory?
-- Can I name one common bug and how to avoid it?
-## Learning Path
-
-- Prerequisite: **None (start here)**
-- Next Topic: **JavaScript if**
-
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+- Can you choose the correct conditional form for a problem?
+- Can you rewrite a complex ternary as readable `if...else`?
+- Can you explain why readability matters in branch-heavy code?

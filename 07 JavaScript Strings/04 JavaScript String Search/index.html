@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JavaScript String Search - Index</title>
+    <meta charset="UTF-8">
+    <title>JS String Search</title>
+    <style>body{font-family:sans-serif;padding:20px;line-height:1.6;}</style>
 </head>
 <body>
-  <h1>JavaScript String Search</h1>
-  <h2>Example</h2>
-  <p>This page demonstrates: JavaScript String Search.</p>
-  <ul>
-    <li><a href="./includes startsWith endsWith.html">includes startsWith endsWith</a></li>
-    <li><a href="./indexOf and lastIndexOf.html">indexOf and lastIndexOf</a></li>
-    <li><a href="./match variants.html">match variants</a></li>
-    <li><a href="./matchAll iterator.html">matchAll iterator</a></li>
-    <li><a href="./search with regex.html">search with regex</a></li>
-  </ul>
+
+    <h1>JavaScript String Search</h1>
+    <p>The indexOf() method returns the position of the first occurrence of a specified text.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let str = "Please locate where 'locate' occurs!";
+        let index = str.indexOf("locate");
+        document.getElementById("demo").innerHTML = index;
+    </script>
+
 </body>
 </html>
-

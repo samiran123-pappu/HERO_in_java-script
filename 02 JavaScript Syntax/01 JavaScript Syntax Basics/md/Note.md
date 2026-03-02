@@ -4,37 +4,35 @@ Track: **02 JavaScript Syntax**
 
 ## Core Idea
 
-- Syntax and statements are the grammar of JavaScript programs.
-- Clean formatting, comments, and predictable output methods improve learning speed.
+This topic covers a foundational JavaScript behavior.
 
-## Syntax Patterns
+## Deep Explanation
 
-- Prefer `let`/`const`, semicolons consistently, and readable line breaks.
-- Use `innerHTML`/`innerText` for visible output and `console.log` for debugging.
+Understand runtime behavior first, then optimize syntax speed.
+
+## Worked Example
+
+```js
+// write, run, and tweak one minimal example
+```
 
 ## Common Mistakes
 
-- Mixing output styles randomly and skipping readability conventions.
+Memorizing without testing execution flow.
+
+## Real-World Use
+
+Directly transferable to project code.
 
 ## How To Study This Topic
 
-- Read the HTML example heading and predict the expected result first.
-- Run the `.js` file and verify each variable/value transition.
-- Open the `.html` file and compare visible output with your prediction.
-- Change one line and rerun to observe cause/effect clearly.
+- Predict output before running.
+- Compare `.js` and `.html` behavior.
+- Change one line and explain the result.
+- Reduce failures to smallest reproducible snippet.
 
 ## Quick Self-Check
 
-- Can I explain this topic in one sentence without reading code?
-- Can I write a minimal working example from memory?
-- Can I name one common bug and how to avoid it?
-## Learning Path
-
-- Prerequisite: **None (start here)**
-- Next Topic: **JavaScript Statements**
-
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+- Can I explain this concept clearly?
+- Can I code a minimal example from memory?
+- Can I identify one bug pattern and fix?

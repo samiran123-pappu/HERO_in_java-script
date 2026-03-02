@@ -2,37 +2,52 @@
 
 Track: **06 JavaScript Loops**
 
-## Core Idea
+## While Loop
 
-`while` repeats as long as condition stays true.
+`while` repeats as long as condition is true.
 
 ```js
 while (i < 10) {
+  text += i;
   i++;
 }
 ```
 
-`do...while` runs body once before first condition check.
+## Do While Loop
 
-## When Useful
+`do...while` executes body once before checking condition.
 
-Use when iteration count is not known in advance.
+```js
+do {
+  text += i;
+  i++;
+} while (i < 10);
+```
 
-## Pitfall
+Use this when at least one run is required.
 
-Forgetting to update condition variables causes infinite loops.
+## For vs While
 
-## Quick Check
+- `for` is cleaner when loop structure is known (init/condition/step)
+- `while` is cleaner when only condition-driven repetition is needed
+
+## Critical Safety Note
+
+Always update condition variables.
+Missing updates can lock browser/tab with infinite loop.
+
+## Common Mistakes
+
+- not updating loop variable
+- using `do...while` when zero-run behavior is required
+- unclear condition logic causing hidden infinite loops
+
+## Real-World Use
+
+Useful for streaming processing, retry loops, and unknown-length iterative checks.
+
+## Quick Self-Check
 
 - Can you explain difference between `while` and `do...while`?
-- Can you rewrite a simple `for` as `while`?
-## Learning Path
-
-- Prerequisite: **JavaScript For Loop**
-- Next Topic: **JavaScript Break**
-
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+- When is `while` clearer than `for`?
+- How do you prevent infinite `while` loops?

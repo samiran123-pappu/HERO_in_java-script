@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Object Methods</title>
+    <style>body{font-family:sans-serif;padding:20px;line-height:1.6;}</style>
+</head>
 <body>
-  <h1>11 JavaScript Dates</h1>
-  <h2>Example</h2>
-  <p>This page demonstrates: 11 JavaScript Dates.</p>
-  <ol>
-    <li><a href="./01 JavaScript Date Basics/index.html">01 JavaScript Date Basics</a></li>
-    <li><a href="./02 JavaScript Date Formats/index.html">02 JavaScript Date Formats</a></li>
-    <li><a href="./03 JavaScript Date Get Methods/index.html">03 JavaScript Date Get Methods</a></li>
-    <li><a href="./04 JavaScript Date Set Methods/index.html">04 JavaScript Date Set Methods</a></li>
-    <li><a href="./05 JavaScript Date Reference/index.html">05 JavaScript Date Reference</a></li>
-  </ol>
+
+    <h1>JavaScript Object Methods</h1>
+    <p>A method is a function stored as a property.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        document.getElementById("demo").innerHTML = person.fullName();
+    </script>
+
 </body>
 </html>
-

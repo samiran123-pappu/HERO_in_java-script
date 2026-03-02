@@ -2,39 +2,44 @@
 
 Track: **11 JavaScript Scope**
 
-## Core Idea
+## Fast Summary
 
-- Scope defines where a variable is visible and where it can be safely used.
-- Hoisting affects declarations; strict mode prevents many silent JavaScript mistakes.
+### Scope Types
 
-## Syntax Patterns
+- Global: visible broadly
+- Function: visible only inside function
+- Block: visible only inside `{}` for `let`/`const`
 
-- `let` and `const` are block-scoped. `var` is function-scoped.
-- Use `"use strict";` at script/function top to enable strict mode rules.
+### Hoisting Rules
 
-## Common Mistakes
+- `var`: hoisted, initialized to `undefined`
+- `let`/`const`: hoisted, TDZ until declaration
+- initialization lines are not hoisted
 
-- Assuming `var` is block scoped, or using variables before declaration and hitting TDZ errors.
+### Strict Mode
 
-## How To Study This Topic
+- enable with `"use strict";`
+- blocks accidental globals
+- catches unsafe patterns as explicit errors
 
-- Read the HTML example heading and predict the expected result first.
-- Run the `.js` file and verify each variable/value transition.
-- Open the `.html` file and compare visible output with your prediction.
-- Change one line and rerun to observe cause/effect clearly.
+## Debug Checklist for Scope Bugs
 
-## Quick Self-Check
+1. Where is variable declared?
+2. Which keyword is used (`var`, `let`, `const`)?
+3. Is code inside block/function?
+4. Is variable accessed before declaration?
+5. Is strict mode enabled?
 
-- Can I explain this topic in one sentence without reading code?
-- Can I write a minimal working example from memory?
-- Can I name one common bug and how to avoid it?
-## Learning Path
+## Recommended Rules
 
-- Prerequisite: **JavaScript Use Strict**
-- Next Topic: **None (last topic in this track)**
+- Prefer `const` by default
+- Use `let` when reassignment is needed
+- Avoid `var` in modern code
+- Keep variable scope as narrow as possible
+- Declare before use
 
-## Mini Exercises
+## Mini Practice Prompts
 
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+- Write one example each for global, function, and block scope.
+- Write one hoisting example with `var` and one with `let`.
+- Show a strict-mode error and explain why it happens.

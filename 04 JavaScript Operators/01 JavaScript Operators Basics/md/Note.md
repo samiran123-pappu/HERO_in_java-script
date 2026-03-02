@@ -2,35 +2,73 @@
 
 Track: **04 JavaScript Operators**
 
-## Core Idea
+## Why Operators Matter
 
-Operators are symbols that perform actions on values.
+Operators are the symbols that make your code do actual work.
+Without operators, variables just store values. With operators, you can:
 
-- Arithmetic (`+ - * / % **`)
-- Assignment (`= += -= ...`)
-- Comparison (`== === > < ...`)
-- Logical (`&& || !`)
+- calculate values
+- compare values
+- combine conditions
+- update state
 
-## Key Behavior
+If you get operators wrong, your logic is wrong even if syntax is valid.
 
-`+` can add numbers or concatenate strings.
+## Main Operator Families
+
+- Arithmetic: `+ - * / % ** ++ --`
+- Assignment: `= += -= *= /= %= **= &&= ||= ??=`
+- Comparison: `== === != !== > < >= <=`
+- Logical: `&& || !`
+
+## Core Distinction: Assignment vs Comparison
+
+This is one of the biggest beginner mistakes.
 
 ```js
-5 + 5;   // 10
-"5" + 5; // "55"
+let x = 5;   // assignment
+x == 5;      // comparison (loose)
+x === 5;     // comparison (strict)
 ```
 
-## Quick Check
+`=` stores a value.
+`==` and `===` check equality.
 
-- Can you tell assignment from comparison quickly?
-- Can you predict result types when strings are involved?
-## Learning Path
+## Operator Reading Habit
 
-- Prerequisite: **None (start here)**
-- Next Topic: **JavaScript Arithmetic Operators**
+Read expressions left-to-right, but respect precedence.
+When in doubt, add parentheses.
 
-## Mini Exercises
+```js
+let result = 10 + 2 * 5;    // 20
+let safe = (10 + 2) * 5;    // 60
+```
 
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+## String + Number Warning
+
+`+` is special: it can add numbers or concatenate strings.
+
+```js
+5 + 5;      // 10
+"5" + 5;    // "55"
+"A" + 5;    // "A5"
+```
+
+If either side becomes string in `+`, the result is string concatenation.
+
+## Real-World Importance
+
+Operators appear in every feature:
+
+- validation rules
+- pricing calculations
+- permission checks
+- filtering and sorting logic
+
+Strong operator understanding makes your code correct and debuggable.
+
+## Quick Self-Check
+
+- Can you explain the difference between `=` and `===`?
+- Can you predict result type for `"10" + 2`?
+- Can you rewrite a complex expression with parentheses for clarity?

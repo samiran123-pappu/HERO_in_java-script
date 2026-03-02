@@ -2,11 +2,11 @@
 
 Track: **06 JavaScript Loops**
 
-## Structure
+## Syntax
 
 ```js
 for (init; condition; step) {
-  // body
+  // loop body
 }
 ```
 
@@ -14,26 +14,40 @@ for (init; condition; step) {
 - `condition` checked before each iteration
 - `step` runs after each iteration
 
-## Common Use
+## Flexible Parts
 
-Index-based array traversal and counted repetition.
+All three expressions are optional, but clarity should come first.
 
-## Pitfalls
+```js
+for (; i < len; ) {
+  // manual step inside body
+  i++;
+}
+```
 
-- Off-by-one errors (`i <= arr.length` instead of `<`)
-- Forgetting `step` update
+## Scope in For Loops
 
-## Quick Check
+Using `let i` keeps `i` block-scoped to loop.
+Using `var i` leaks it outside loop scope.
 
-- Can you write a `for` loop to print 0..4?
+## Typical Use Cases
+
+- index-based array traversal
+- range loops (0 to N)
+- controlled repeat logic
+
+## Common Mistakes
+
+- off-by-one errors
+- forgetting `i++`
+- declaring loop variable with `var` and causing outside side effects
+
+## Real-World Use
+
+Used heavily in batching, pagination loops, and indexed operations.
+
+## Quick Self-Check
+
+- Can you write a loop from 1 to 10?
 - Can you iterate array safely without overflow?
-## Learning Path
-
-- Prerequisite: **JavaScript Loops Basics**
-- Next Topic: **JavaScript While Loops**
-
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+- Why is `let` safer than `var` in loop counters?

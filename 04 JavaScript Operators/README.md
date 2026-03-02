@@ -1,12 +1,36 @@
-# 12 JavaScript Operators
+# 04 JavaScript Operators
 
-This track covers JavaScript operators in one clean flow:
+## Performing Actions on Data
 
-1. Operators basics
-2. Arithmetic operators
-3. Assignment operators
-4. Comparison operators
-5. Logical operators
-6. Quick operator reference
+Operators are symbols that tell the compiler or interpreter to perform specific mathematical, relational, or logical manipulations.
 
-Open each topic's `Note.md`, then run the `.js` examples or view the `.html` examples.
+## 📚 Topics
+
+1.  **[01 Arithmetic](./01%20Arithmetic/index.html)**
+    *   Math operations: `+`, `-`, `*`, `/`, `%`, `++`, `--`.
+    *   Operator precedence.
+
+2.  **02 Assignment**
+    *   Assigning values: `=`, `+=`, `-=`.
+    *   Modern operators: `**=`, `&&=`.
+
+3.  **03 Comparison**
+    *   Testing equality: `==` vs `===`.
+    *   Greater than, less than.
+
+4.  **04 Logical**
+    *   Boolean logic: `&&` (AND), `||` (OR), `!` (NOT).
+    *   Short-circuit evaluation.
+
+5.  **05 Typeof**
+    *   Checking data types at runtime.
+    *   Understanding `typeof null` (the famous bug).
+
+## 🔑 Key Takeaway
+
+- Always use strict equality `===` to avoid type coercion bugs.
+- Understand the difference between `x++` and `++x`.
+- Logical operators can return non-boolean values (e.g., `val || default`).
+
+---
+*Open `index.html` to browse these topics interactively.*

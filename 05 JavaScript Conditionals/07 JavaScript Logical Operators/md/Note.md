@@ -2,39 +2,65 @@
 
 Track: **05 JavaScript Conditionals**
 
-## Core Idea
+## Operators
 
-- Conditional flow runs different code paths based on true/false results.
-- Choose the simplest construct for readability (`if`, `switch`, ternary where short).
+- `&&` logical AND
+- `||` logical OR
+- `!` logical NOT
+- `??` nullish coalescing
 
-## Syntax Patterns
+## Behavior
 
-- Ternary format: `condition ? whenTrue : whenFalse`.
-- `switch` compares with strict equality and usually needs `break`.
+### AND
+True only when both conditions are true.
+
+```js
+x < 10 && y > 1
+```
+
+### OR
+True when at least one condition is true.
+
+```js
+x === 5 || y === 5
+```
+
+### NOT
+Inverts boolean value.
+
+```js
+!(x === y)
+```
+
+### Nullish Coalescing (`??`)
+Returns right side only when left side is `null` or `undefined`.
+
+```js
+const result = name ?? "missing";
+```
+
+## `||` vs `??`
+
+- `||` treats all falsy values (`0`, `""`, `false`) as fallback triggers
+- `??` treats only `null`/`undefined` as fallback triggers
+
+## Short-Circuiting
+
+- `A && B`: if A is false, B is skipped
+- `A || B`: if A is true, B is skipped
 
 ## Common Mistakes
 
-- Overusing nested ternaries or forgetting `break` in switch cases.
+- using `||` when `0` is valid and should be preserved
+- writing long conditions without grouping parentheses
+- misunderstanding short-circuit side effects
 
-## How To Study This Topic
+## Real-World Use
 
-- Read the HTML example heading and predict the expected result first.
-- Run the `.js` file and verify each variable/value transition.
-- Open the `.html` file and compare visible output with your prediction.
-- Change one line and rerun to observe cause/effect clearly.
+Used for validation chains, fallback values, guards, and access checks.
 
 ## Quick Self-Check
 
-- Can I explain this topic in one sentence without reading code?
-- Can I write a minimal working example from memory?
-- Can I name one common bug and how to avoid it?
-## Learning Path
-
-- Prerequisite: **JavaScript Booleans**
-- Next Topic: **None (last topic in this track)**
-
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+- When should you choose `??` instead of `||`?
+- Can you explain short-circuiting with one example?
+- Can you simplify a nested condition with logical operators?

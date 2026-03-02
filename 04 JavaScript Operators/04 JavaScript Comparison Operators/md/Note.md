@@ -2,40 +2,73 @@
 
 Track: **04 JavaScript Operators**
 
-## Core Idea
+## Comparison Operators
 
-Comparison returns `true` or `false`.
+- `==` equal (after coercion)
+- `===` equal value and equal type
+- `!=` not equal (after coercion)
+- `!==` not equal value or type
+- `>` greater than
+- `<` less than
+- `>=` greater than or equal
+- `<=` less than or equal
 
-## Most Important Distinction
+Comparisons return only boolean values: `true` or `false`.
 
-```js
-5 == "5";  // true  (coercion)
-5 === "5"; // false (strict type + value)
-```
-
-Prefer `===` and `!==` for predictable behavior.
-
-## String Comparisons
-
-Strings compare lexicographically, not numerically.
+## `==` vs `===` (Critical)
 
 ```js
-"20" < "5"; // true lexicographically? actually false by character order
+5 == "5";   // true
+5 === "5";  // false
 ```
 
-Convert types explicitly when needed.
+Prefer strict operators (`===`, `!==`) in modern code.
 
-## Quick Check
+## String Comparison
 
-- When should `===` be used over `==`?
-- Why can mixed-type comparisons surprise you?
-## Learning Path
+Strings compare lexicographically (dictionary-like order):
 
-- Prerequisite: **JavaScript Assignment Operators**
-- Next Topic: **JavaScript Logical Operators**
+```js
+"A" < "B";   // true
+"20" < "5";  // true? no, false by lexicographic order rules
+```
 
-## Mini Exercises
+Convert to numbers when numeric logic is intended.
 
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+```js
+Number("20") < Number("5"); // false
+```
+
+## Mixed-Type Comparison Risks
+
+JavaScript may coerce values before comparison:
+
+```js
+2 < "12";    // true
+2 < "John";  // false
+```
+
+`"John"` cannot become a valid number, causing comparison surprises.
+
+## Practical Pattern
+
+```js
+const age = Number(inputAge);
+if (Number.isNaN(age)) {
+  message = "Input is not a number";
+} else {
+  message = age < 18 ? "Too young" : "Old enough";
+}
+```
+
+## Common Mistakes
+
+- relying on loose equality for critical checks
+- comparing strings when numeric comparison is needed
+- ignoring type conversion in user input
+
+## Quick Self-Check
+
+- Why is `===` safer than `==`?
+- What result do you expect from `"2" > "12"` and why?
+- When should you call `Number()` before comparing?

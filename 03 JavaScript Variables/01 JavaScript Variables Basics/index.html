@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JavaScript Variables - Index</title>
+    <meta charset="UTF-8">
+    <title>JS Variables Basics</title>
+    <style>body{font-family:sans-serif;padding:20px;line-height:1.6;}</style>
 </head>
 <body>
-  <h1>JavaScript Variables</h1>
-  <h2>Example</h2>
-  <p>This page demonstrates: JavaScript Variables.</p>
-  <ul>
-    <li><a href="./Assignment not equality.html">Assignment not equality</a></li>
-    <li><a href="./Declare with const.html">Declare with const</a></li>
-    <li><a href="./Declare with let.html">Declare with let</a></li>
-    <li><a href="./Identifier rules.html">Identifier rules</a></li>
-    <li><a href="./One statement many variables.html">One statement many variables</a></li>
-    <li><a href="./String and number addition.html">String and number addition</a></li>
-  </ul>
+
+    <h1>JavaScript Variables</h1>
+    <p>Variables are containers for data.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let price1 = 5;
+        let price2 = 6;
+        let total = price1 + price2;
+
+        document.getElementById("demo").innerHTML =
+        "The total is: " + total;
+    </script>
+
 </body>
 </html>
-

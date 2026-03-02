@@ -4,37 +4,35 @@ Track: **12 JavaScript Dates**
 
 ## Core Idea
 
-- Date/time code must be explicit about timezone, formatting, and arithmetic behavior.
-- `Date` and `Temporal` APIs differ; Temporal is safer and more explicit for modern workflows.
+Date logic requires explicit parsing and timezone awareness.
 
-## Syntax Patterns
+## Deep Explanation
 
-- Date construction: `new Date(...)`; Temporal examples: `Temporal.Now.*`, `Temporal.PlainDate.*`.
-- Prefer ISO strings and explicit conversion steps.
+Prefer ISO formats and separate local vs UTC intent clearly.
+
+## Worked Example
+
+```js
+const d = new Date("2025-01-01T00:00:00Z");
+```
 
 ## Common Mistakes
 
-- Parsing ambiguous date strings or doing timezone-sensitive logic without explicit zone handling.
+Ambiguous string parsing and mixed timezone assumptions.
+
+## Real-World Use
+
+Scheduling and reporting depend on deterministic date handling.
 
 ## How To Study This Topic
 
-- Read the HTML example heading and predict the expected result first.
-- Run the `.js` file and verify each variable/value transition.
-- Open the `.html` file and compare visible output with your prediction.
-- Change one line and rerun to observe cause/effect clearly.
+- Predict output before running.
+- Compare `.js` and `.html` behavior.
+- Change one line and explain the result.
+- Reduce failures to smallest reproducible snippet.
 
 ## Quick Self-Check
 
-- Can I explain this topic in one sentence without reading code?
-- Can I write a minimal working example from memory?
-- Can I name one common bug and how to avoid it?
-## Learning Path
-
-- Prerequisite: **JavaScript Date Formats**
-- Next Topic: **JavaScript Date Set Methods**
-
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+- Can I explain this concept clearly?
+- Can I code a minimal example from memory?
+- Can I identify one bug pattern and fix?

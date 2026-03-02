@@ -4,31 +4,55 @@ Track: **06 JavaScript Loops**
 
 ## Core Idea
 
-Loops repeat code while updating state each iteration.
+Loops repeat a block of code while a condition allows it.
 
-Typical use case: iterate over arrays or ranges.
+Without loops, repeating tasks (like array iteration) would require duplicated code.
 
-## Main Loop Families
+## Why Loops Matter
 
-- `for` (known counter/steps)
-- `while` (condition-first)
+Loops are used for:
+
+- processing arrays/lists
+- generating repeated output
+- accumulating totals/counters
+- scanning data for matches
+
+## Main Loop Types
+
+- `for` (counted iteration)
+- `while` (condition-based)
 - `do...while` (runs at least once)
 
-## Safety Rule
+## Typical Pattern
 
-Always ensure loop progress (counter changes), otherwise infinite loops happen.
+```js
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+```
 
-## Quick Check
+## Loop Safety Rule
 
-- Can you explain when to choose `for` vs `while`?
-- Can you spot where loop termination happens?
-## Learning Path
+Every loop must clearly define:
 
-- Prerequisite: **None (start here)**
-- Next Topic: **JavaScript For Loop**
+1. start state
+2. stop condition
+3. progress step
 
-## Mini Exercises
+If progress is missing, loop can become infinite.
 
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+## Common Mistakes
+
+- forgetting to update loop variable
+- wrong stop condition (`<=` vs `<`)
+- using loop when simple direct logic would be clearer
+
+## Real-World Use
+
+Loops are core for rendering lists, handling API arrays, and data transformation.
+
+## Quick Self-Check
+
+- Can you explain start/stop/step in one loop example?
+- When is `while` better than `for`?
+- How do you spot infinite-loop risk quickly?

@@ -1,9 +1,25 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>08 JavaScript Numbers</title></head><body><h1>08 JavaScript Numbers</h1>
-  <h2>Example</h2>
-  <p>This page demonstrates: 08 JavaScript Numbers.</p><ul><li><a href='./01 JavaScript Numbers Basics/'>01 JavaScript Numbers Basics</a></li>
-<li><a href='./02 JavaScript Number Methods/'>02 JavaScript Number Methods</a></li>
-<li><a href='./03 JavaScript Number Properties/'>03 JavaScript Number Properties</a></li>
-<li><a href='./04 JavaScript Number Reference/'>04 JavaScript Number Reference</a></li>
-<li><a href='./05 JavaScript Bitwise Operations/'>05 JavaScript Bitwise Operations</a></li>
-<li><a href='./06 JavaScript BigInt/'>06 JavaScript BigInt</a></li></ul></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Number Basics</title>
+    <style>body{font-family:sans-serif;padding:20px;line-height:1.6;}</style>
+</head>
+<body>
 
+    <h1>JavaScript Number Basics</h1>
+    <p>Floating point arithmetic is not always 100% accurate.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let x = 0.2 + 0.1;
+        let y = (0.2 * 10 + 0.1 * 10) / 10;
+
+        document.getElementById("demo").innerHTML =
+        "0.2 + 0.1 = " + x + "<br>" +
+        "Corrected: " + y;
+    </script>
+
+</body>
+</html>

@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JavaScript Strings - Index</title>
+    <meta charset="UTF-8">
+    <title>JS String Basics</title>
+    <style>body{font-family:sans-serif;padding:20px;line-height:1.6;}</style>
 </head>
 <body>
-  <h1>JavaScript Strings</h1>
-  <h2>Example</h2>
-  <p>This page demonstrates: JavaScript Strings.</p>
-  <ul>
-    <li><a href="./Basic quotes.html">Basic quotes</a></li>
-    <li><a href="./Escape characters.html">Escape characters</a></li>
-    <li><a href="./Multiline with template.html">Multiline with template</a></li>
-    <li><a href="./Quotes inside quotes.html">Quotes inside quotes</a></li>
-    <li><a href="./String length.html">String length</a></li>
-    <li><a href="./String primitive vs object.html">String primitive vs object</a></li>
-  </ul>
+
+    <h1>JavaScript String Basics</h1>
+    <p>Strings are used for storing and manipulating text.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let length = text.length;
+
+        document.getElementById("demo").innerHTML =
+        "The length of the string is: " + length;
+    </script>
+
 </body>
 </html>
-

@@ -2,26 +2,45 @@
 
 Track: **04 JavaScript Operators**
 
-## Quick List
+## Quick Reference Tables
 
-- Arithmetic: `+ - * / % ** ++ --`
-- Assignment: `= += -= *= /= %= **= &&= ||= ??=`
-- Comparison: `== === != !== > < >= <=`
-- Logical: `&& || !`
+### Arithmetic
+`+  -  *  /  %  **  ++  --`
 
-## Practical Rules
+### Assignment
+`=  +=  -=  *=  /=  %=  **=  &&=  ||=  ??=`
 
-1. Prefer strict comparisons (`===`, `!==`)
-2. Use parentheses for readable precedence
-3. Use compound assignment when it improves clarity
-4. Be explicit with type conversion when comparing
-## Learning Path
+### Comparison
+`==  ===  !=  !==  >  <  >=  <=`
 
-- Prerequisite: **JavaScript Logical Operators**
-- Next Topic: **None (last topic in this track)**
+### Logical
+`&&  ||  !`
 
-## Mini Exercises
+## Recommended Defaults
 
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+1. Use `===` and `!==` unless you intentionally want coercion.
+2. Use parentheses when expression mixes arithmetic/comparison/logical operators.
+3. Use `??=` for null/undefined defaults.
+4. Use `||=` only when all falsy values should trigger fallback.
+
+## Debug Checklist for Operator Bugs
+
+- Are operand types what you think they are?
+- Is `+` doing addition or string concatenation?
+- Is operator precedence changing your expected order?
+- Are you comparing strict or loose equality?
+
+## Practical Mini Drill
+
+Try converting these into explicit forms:
+
+- `x += y`
+- `x ||= y`
+- `x ??= y`
+- `x **= y`
+
+Then test with edge values: `0`, `""`, `false`, `null`, `undefined`.
+
+## Final Goal
+
+If you can explain each operator family without looking up syntax, your JavaScript logic quality will improve noticeably.

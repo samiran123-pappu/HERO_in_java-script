@@ -2,37 +2,49 @@
 
 Track: **03 JavaScript Variables**
 
-## Core Idea
+## The `let` Keyword
 
-`let` declares variables that are block-scoped and reassignable.
+Introduced in ES6 (2015), `let` is the modern way to declare variables that **can change**.
+
+## Key Features
+
+1.  **Block Scope**: Variables declared inside a `{ }` block cannot be accessed from outside the block.
+2.  **Cannot be Redeclared**: You cannot accidentally declare the same variable twice in the same scope.
+
+## Block Scope Example
 
 ```js
-let count = 1;
-count = 2; // allowed
+{
+  let x = 2;
+}
+// x can NOT be used here
 ```
 
-## Scope Behavior
+This is safer than `var`, which would leak out of the block.
 
-- Inside `{}` => only visible in that block
-- Not redeclarable in the same scope
-- Different blocks can reuse same name safely
+## Reassignment
 
-## Hoisting Detail
+You **can** change the value of a `let` variable.
 
-`let` is hoisted but uninitialized until declaration line (Temporal Dead Zone).
-Using it early throws `ReferenceError`.
+```js
+let score = 10;
+score = 20; // Allowed
+```
 
-## Quick Check
+## Redeclaration
 
-- Why does `let` inside an `if` not leak outside?
-- Why is `let x; let x;` in same scope an error?
-## Learning Path
+You **cannot** redeclare a `let` variable in the same scope.
 
-- Prerequisite: **JavaScript Variables Basics**
-- Next Topic: **JavaScript Const**
+```js
+let x = "John";
+let x = 0; // SyntaxError: Identifier 'x' has already been declared
+```
 
-## Mini Exercises
+## Quick Self-Check
 
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+1.  Can you access a `let` variable outside the block it was defined in? (No)
+2.  Can you change the value of a `let` variable? (Yes)
+3.  Is `let x = 10; let x = 20;` valid code? (No)
+
+---
+*Next Topic: Const.*

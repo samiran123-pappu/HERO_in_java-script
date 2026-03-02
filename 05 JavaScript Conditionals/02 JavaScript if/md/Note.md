@@ -4,37 +4,51 @@ Track: **05 JavaScript Conditionals**
 
 ## Core Idea
 
-- Conditional flow runs different code paths based on true/false results.
-- Choose the simplest construct for readability (`if`, `switch`, ternary where short).
+`if` runs a block only when a condition is true.
 
-## Syntax Patterns
+```js
+if (hour < 18) {
+  greeting = "Good day";
+}
+```
 
-- Ternary format: `condition ? whenTrue : whenFalse`.
-- `switch` compares with strict equality and usually needs `break`.
+## How Condition is Evaluated
+
+The condition must resolve to a boolean (`true`/`false`).
+Any expression that returns boolean can be used.
+
+## Nested if
+
+You can place one `if` inside another, but too much nesting hurts readability.
+
+```js
+if (country === "USA") {
+  if (age >= 16) {
+    canDrive = true;
+  }
+}
+```
+
+Often, combined logic is cleaner:
+
+```js
+if (country === "USA" && age >= 16) {
+  canDrive = true;
+}
+```
 
 ## Common Mistakes
 
-- Overusing nested ternaries or forgetting `break` in switch cases.
+- forgetting braces in multi-line blocks
+- using assignment (`=`) instead of comparison (`===`) in condition
+- over-nesting when logical operators can simplify
 
-## How To Study This Topic
+## Real-World Use
 
-- Read the HTML example heading and predict the expected result first.
-- Run the `.js` file and verify each variable/value transition.
-- Open the `.html` file and compare visible output with your prediction.
-- Change one line and rerun to observe cause/effect clearly.
+Use `if` for guards, input validation, and preconditions before expensive operations.
 
 ## Quick Self-Check
 
-- Can I explain this topic in one sentence without reading code?
-- Can I write a minimal working example from memory?
-- Can I name one common bug and how to avoid it?
-## Learning Path
-
-- Prerequisite: **JavaScript Conditionals Basics**
-- Next Topic: **JavaScript if else**
-
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+- Can you rewrite nested `if` with logical operators?
+- Why is `===` safer in condition checks?
+- When should you keep nested `if` instead of merging?

@@ -4,37 +4,50 @@ Track: **05 JavaScript Conditionals**
 
 ## Core Idea
 
-- Conditional flow runs different code paths based on true/false results.
-- Choose the simplest construct for readability (`if`, `switch`, ternary where short).
+Boolean values are only `true` or `false`.
+They are the foundation of decision making in conditions and loops.
 
-## Syntax Patterns
+## Truthy and Falsy
 
-- Ternary format: `condition ? whenTrue : whenFalse`.
-- `switch` compares with strict equality and usually needs `break`.
+Falsy values include:
+
+- `false`
+- `0` and `-0`
+- `""` (empty string)
+- `null`
+- `undefined`
+- `NaN`
+
+Most other values are truthy.
+
+## Boolean Conversion
+
+```js
+Boolean(10 > 9); // true
+Boolean(0);      // false
+```
+
+## Primitive vs Boolean Object
+
+```js
+let a = false;              // primitive
+let b = new Boolean(false); // object (not recommended)
+```
+
+Avoid Boolean objects; they create comparison confusion and unnecessary overhead.
 
 ## Common Mistakes
 
-- Overusing nested ternaries or forgetting `break` in switch cases.
+- assuming `"false"` is false (it is truthy string)
+- comparing Boolean objects as if they were primitives
+- not understanding truthy/falsy behavior in conditions
 
-## How To Study This Topic
+## Real-World Use
 
-- Read the HTML example heading and predict the expected result first.
-- Run the `.js` file and verify each variable/value transition.
-- Open the `.html` file and compare visible output with your prediction.
-- Change one line and rerun to observe cause/effect clearly.
+Booleans drive feature toggles, permission flags, loading states, and validation outcomes.
 
 ## Quick Self-Check
 
-- Can I explain this topic in one sentence without reading code?
-- Can I write a minimal working example from memory?
-- Can I name one common bug and how to avoid it?
-## Learning Path
-
-- Prerequisite: **JavaScript Ternary Operator**
-- Next Topic: **JavaScript Logical Operators**
-
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+- Can you list all common falsy values?
+- Why is `new Boolean(false)` usually a bad idea?
+- What does `Boolean("false")` return and why?

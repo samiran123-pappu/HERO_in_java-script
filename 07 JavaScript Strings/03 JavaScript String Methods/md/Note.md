@@ -2,39 +2,60 @@
 
 Track: **07 JavaScript Strings**
 
-## Core Idea
+## Extracting String Parts
 
-- Strings are immutable. Methods return new strings instead of editing the original.
-- Template literals improve readability for interpolation and multi-line text.
+There are 3 methods for extracting a part of a string:
 
-## Syntax Patterns
+1.  `slice(start, end)` (Recommended)
+2.  `substring(start, end)`
+3.  `substr(start, length)` (Deprecated)
 
-- Use backticks and `${...}` for interpolation.
-- Common methods: `slice`, `replace`, `split`, `trim`, `includes`, `startsWith`, `endsWith`.
+### `slice()`
 
-## Common Mistakes
+Extracts a part of a string and returns the extracted part in a new string.
+It takes 2 parameters: start position, and end position (end not included).
 
-- Confusing string index behavior with arrays, and expecting in-place mutation.
+```js
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7, 13); // Returns "Banana"
+```
 
-## How To Study This Topic
+**Negative values** count from the end of the string.
 
-- Read the HTML example heading and predict the expected result first.
-- Run the `.js` file and verify each variable/value transition.
-- Open the `.html` file and compare visible output with your prediction.
-- Change one line and rerun to observe cause/effect clearly.
+## Replacing Content
+
+The `replace()` method replaces a specified value with another value in a string.
+
+```js
+let text = "Please visit Microsoft!";
+let newText = text.replace("Microsoft", "W3Schools");
+```
+
+**Note:** It only replaces the **first** match and is case-sensitive.
+To replace all, use `replaceAll()` or a regex with the `/g` flag.
+
+## Converting Case
+
+```js
+let text1 = "Hello World!";
+let text2 = text1.toUpperCase(); // HELLO WORLD!
+let text3 = text1.toLowerCase(); // hello world!
+```
+
+## Converting to Array
+
+A string can be converted to an array with the `split()` method.
+
+```js
+let text = "a,b,c,d,e";
+const myArray = text.split(","); // Split on commas
+```
 
 ## Quick Self-Check
 
-- Can I explain this topic in one sentence without reading code?
-- Can I write a minimal working example from memory?
-- Can I name one common bug and how to avoid it?
-## Learning Path
+1.  Does `slice(0, 5)` include the character at index 5? (No)
+2.  How do you replace ALL occurrences of a word? (`replaceAll`)
+3.  What method converts a string into an array? (`split`)
 
-- Prerequisite: **JavaScript String Templates**
-- Next Topic: **JavaScript String Search**
-
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+---
+*Next Topic: String Search.*

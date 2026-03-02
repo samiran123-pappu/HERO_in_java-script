@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JavaScript String Templates - Index</title>
+    <meta charset="UTF-8">
+    <title>JS String Templates</title>
+    <style>body{font-family:sans-serif;padding:20px;line-height:1.6;}</style>
 </head>
 <body>
-  <h1>JavaScript String Templates</h1>
-  <h2>Example</h2>
-  <p>This page demonstrates: JavaScript String Templates.</p>
-  <ul>
-    <li><a href="./Backticks basic.html">Backticks basic</a></li>
-    <li><a href="./Expression interpolation.html">Expression interpolation</a></li>
-    <li><a href="./HTML template building.html">HTML template building</a></li>
-    <li><a href="./Multiline template.html">Multiline template</a></li>
-    <li><a href="./Quotes inside template.html">Quotes inside template</a></li>
-    <li><a href="./Variable interpolation.html">Variable interpolation</a></li>
-  </ul>
+
+    <h1>JavaScript String Templates</h1>
+    <p>Template Literals use back-ticks (``) rather than the quotes ("") to define a string.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let firstName = "John";
+        let lastName = "Doe";
+
+        let text = `Welcome ${firstName}, ${lastName}!`;
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
 </body>
 </html>
-

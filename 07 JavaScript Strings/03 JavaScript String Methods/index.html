@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JavaScript String Methods - Index</title>
+    <meta charset="UTF-8">
+    <title>JS String Methods</title>
+    <style>body{font-family:sans-serif;padding:20px;line-height:1.6;}</style>
 </head>
 <body>
-  <h1>JavaScript String Methods</h1>
-  <h2>Example</h2>
-  <p>This page demonstrates: JavaScript String Methods.</p>
-  <ul>
-    <li><a href="./Character access methods.html">Character access methods</a></li>
-    <li><a href="./Concat and immutability.html">Concat and immutability</a></li>
-    <li><a href="./Repeat and split.html">Repeat and split</a></li>
-    <li><a href="./Replace and replaceAll.html">Replace and replaceAll</a></li>
-    <li><a href="./Slice and substring.html">Slice and substring</a></li>
-    <li><a href="./Trim and padding.html">Trim and padding</a></li>
-    <li><a href="./Upper and lower case.html">Upper and lower case</a></li>
-    <li><a href="./Well formed methods.html">Well formed methods</a></li>
-  </ul>
+
+    <h1>JavaScript String Methods</h1>
+    <p>The slice() method extracts a part of a string and returns the extracted parts in a new string.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let text = "Apple, Banana, Kiwi";
+        let part = text.slice(7,13);
+        document.getElementById("demo").innerHTML = part;
+    </script>
+
 </body>
 </html>
-

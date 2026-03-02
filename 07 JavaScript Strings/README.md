@@ -1,9 +1,35 @@
 ﻿# 07 JavaScript Strings
 
-Structured topics:
-1. 01 JavaScript Strings Basics
-2. 02 JavaScript String Templates
-3. 03 JavaScript String Methods
-4. 04 JavaScript String Search
-5. 05 JavaScript String Reference
-6. 98 Legacy Imports
+## Working with Text
+
+Strings are used for storing and manipulating text. JavaScript strings are immutable, meaning they cannot be changed, only replaced.
+
+## 📚 Topics
+
+1.  **[01 String Basics](./01%20JavaScript%20Strings%20Basics/index.html)**
+    *   Creating strings with quotes.
+    *   The `.length` property.
+    *   Escape characters.
+
+2.  **02 String Templates**
+    *   Using backticks `` ` ``.
+    *   Interpolation `${variable}`.
+    *   Multi-line strings.
+
+3.  **03 String Methods**
+    *   Extracting parts (`slice`, `substring`).
+    *   Modifying content (`replace`, `toUpperCase`).
+    *   Converting to arrays (`split`).
+
+4.  **04 String Search**
+    *   Finding text (`indexOf`, `lastIndexOf`).
+    *   Checking presence (`includes`, `startsWith`).
+
+## 🔑 Key Takeaway
+
+- Strings are **immutable**. Methods like `toUpperCase()` return a *new* string; they don't change the original.
+- Use **Template Literals** (backticks) for dynamic text. It's cleaner than `+` concatenation.
+- Be careful with `slice` vs `substring` (prefer `slice`).
+
+---
+*Open `index.html` to browse these topics interactively.*

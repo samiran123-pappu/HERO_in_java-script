@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Typeof</title>
+    <style>body{font-family:sans-serif;padding:20px;line-height:1.6;}</style>
+</head>
 <body>
-  <h1>12 JavaScript Operators</h1>
-  <h2>Example</h2>
-  <p>This page demonstrates: 12 JavaScript Operators.</p>
-  <ol>
-    <li><a href="./01 JavaScript Operators Basics/index.html">01 JavaScript Operators Basics</a></li>
-    <li><a href="./02 JavaScript Arithmetic Operators/index.html">02 JavaScript Arithmetic Operators</a></li>
-    <li><a href="./03 JavaScript Assignment Operators/index.html">03 JavaScript Assignment Operators</a></li>
-    <li><a href="./04 JavaScript Comparison Operators/index.html">04 JavaScript Comparison Operators</a></li>
-    <li><a href="./05 JavaScript Logical Operators/index.html">05 JavaScript Logical Operators</a></li>
-    <li><a href="./06 JavaScript Operator Reference/index.html">06 JavaScript Operator Reference</a></li>
-  </ol>
+
+    <h1>JavaScript Typeof</h1>
+    <p>The typeof operator returns the type of a variable or an expression.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML =
+        typeof "john" + "<br>" +
+        typeof 3.14 + "<br>" +
+        typeof true + "<br>" +
+        typeof false + "<br>" +
+        typeof x;
+    </script>
+
 </body>
 </html>
-

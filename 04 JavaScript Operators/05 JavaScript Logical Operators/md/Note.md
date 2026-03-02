@@ -2,39 +2,71 @@
 
 Track: **04 JavaScript Operators**
 
-## Core Idea
+## Logical Operators
 
-- Conditional flow runs different code paths based on true/false results.
-- Choose the simplest construct for readability (`if`, `switch`, ternary where short).
+- `&&` AND
+- `||` OR
+- `!` NOT
 
-## Syntax Patterns
+These operators are used to combine or invert boolean logic.
 
-- Ternary format: `condition ? whenTrue : whenFalse`.
-- `switch` compares with strict equality and usually needs `break`.
+## Behavior
+
+### AND (`&&`)
+Returns true only if both sides are true.
+
+```js
+x < 10 && y > 1
+```
+
+### OR (`||`)
+Returns true if at least one side is true.
+
+```js
+x === 5 || y === 5
+```
+
+### NOT (`!`)
+Flips boolean result.
+
+```js
+!(x === y)
+```
+
+## Short-Circuiting
+
+Logical operators may skip evaluation:
+
+- `A && B`: if `A` is false, `B` is not evaluated
+- `A || B`: if `A` is true, `B` is not evaluated
+
+This is useful for guards and fallback patterns.
+
+## With Conditionals
+
+```js
+if (country === "USA" && age >= 16) {
+  canDrive = true;
+}
+```
+
+## With Defaults
+
+```js
+const name = inputName || "Guest";
+```
+
+Be careful: `||` treats `0`, `false`, and `""` as missing.
+Use nullish behavior when needed.
 
 ## Common Mistakes
 
-- Overusing nested ternaries or forgetting `break` in switch cases.
-
-## How To Study This Topic
-
-- Read the HTML example heading and predict the expected result first.
-- Run the `.js` file and verify each variable/value transition.
-- Open the `.html` file and compare visible output with your prediction.
-- Change one line and rerun to observe cause/effect clearly.
+- writing unreadable long chains without parentheses
+- using `||` default where `0` should be valid
+- misunderstanding short-circuit side effects
 
 ## Quick Self-Check
 
-- Can I explain this topic in one sentence without reading code?
-- Can I write a minimal working example from memory?
-- Can I name one common bug and how to avoid it?
-## Learning Path
-
-- Prerequisite: **JavaScript Comparison Operators**
-- Next Topic: **JavaScript Operator Reference**
-
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+- Can you explain short-circuit behavior?
+- When should you group conditions with parentheses?
+- Why can `||` defaulting be risky with numeric values?

@@ -4,37 +4,64 @@ Track: **05 JavaScript Conditionals**
 
 ## Core Idea
 
-- Conditional flow runs different code paths based on true/false results.
-- Choose the simplest construct for readability (`if`, `switch`, ternary where short).
+`switch` compares one expression against many case values.
+Useful when checking many exact matches.
 
-## Syntax Patterns
+```js
+switch (day) {
+  case 0:
+    text = "Sunday";
+    break;
+  default:
+    text = "Unknown";
+}
+```
 
-- Ternary format: `condition ? whenTrue : whenFalse`.
-- `switch` compares with strict equality and usually needs `break`.
+## Important Rule: Strict Comparison
+
+`switch` uses strict matching (`===`).
+Types must match.
+
+```js
+let x = "0";
+switch (x) {
+  case 0:   // not matched
+}
+```
+
+## break and Fall-Through
+
+- `break` exits switch after matched case
+- without `break`, execution falls through to next case
+
+Shared-case pattern:
+
+```js
+switch(day){
+  case 0:
+  case 6:
+    text = "Weekend";
+    break;
+}
+```
+
+## default
+
+`default` runs when no case matches.
+Usually placed last, but can be elsewhere if followed by `break`.
 
 ## Common Mistakes
 
-- Overusing nested ternaries or forgetting `break` in switch cases.
+- forgetting `break`
+- expecting loose type matching
+- using switch for range logic (`<`, `>`), where `if` is better
 
-## How To Study This Topic
+## Real-World Use
 
-- Read the HTML example heading and predict the expected result first.
-- Run the `.js` file and verify each variable/value transition.
-- Open the `.html` file and compare visible output with your prediction.
-- Change one line and rerun to observe cause/effect clearly.
+Used for menu actions, day mapping, status codes, and command routing.
 
 ## Quick Self-Check
 
-- Can I explain this topic in one sentence without reading code?
-- Can I write a minimal working example from memory?
-- Can I name one common bug and how to avoid it?
-## Learning Path
-
-- Prerequisite: **JavaScript if else**
-- Next Topic: **JavaScript Ternary Operator**
-
-## Mini Exercises
-
-1. Write one small code example from this topic without looking at notes.
-2. Modify one existing example so it fails, then fix it and explain why.
-3. Explain this topic in 3-5 lines as if teaching a beginner.
+- Why does switch fail for `"1"` vs `1`?
+- When is switch better than `if...else if`?
+- Can you intentionally use fall-through safely?

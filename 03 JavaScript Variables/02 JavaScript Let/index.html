@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JavaScript Let - Index</title>
+    <meta charset="UTF-8">
+    <title>JS Let</title>
+    <style>body{font-family:sans-serif;padding:20px;line-height:1.6;}</style>
 </head>
 <body>
-  <h1>JavaScript Let</h1>
-  <h2>Example</h2>
-  <p>This page demonstrates: JavaScript Let.</p>
-  <ul>
-    <li><a href="./Block scope with let.html">Block scope with let</a></li>
-    <li><a href="./Cannot redeclare in same scope.html">Cannot redeclare in same scope</a></li>
-    <li><a href="./Hoisting behavior let.html">Hoisting behavior let</a></li>
-    <li><a href="./Reassign with let.html">Reassign with let</a></li>
-    <li><a href="./Redeclare in another block.html">Redeclare in another block</a></li>
-  </ul>
+
+    <h1>JavaScript Let</h1>
+    <p>Variables defined with <b>let</b> have Block Scope.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let x = 10;
+        {
+            let x = 2; // This x is only visible inside this block
+        }
+        // Here x is 10
+        document.getElementById("demo").innerHTML = "Value of x is " + x;
+    </script>
+
 </body>
 </html>
-
