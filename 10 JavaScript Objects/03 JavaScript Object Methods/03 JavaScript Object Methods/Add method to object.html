@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Object Method</h3>
+  <p id="demo"></p>
+  <script>
+    const person = { firstName: "John", lastName: "Doe" };
+    person.name = function () { return this.firstName + " " + this.lastName; };
+    document.getElementById("demo").innerHTML = person.name();
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Prototype Method</h3>
+  <p id="demo"></p>
+  <script>
+    function Car(model) { this.model = model; }
+    Car.prototype.label = function () { return "Car: " + this.model; };
+    const c = new Car("500");
+    document.getElementById("demo").innerHTML = c.label();
+  </script>
+</body>
+</html>

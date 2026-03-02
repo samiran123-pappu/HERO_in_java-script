@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Definitions</h3>
+  <p id="demo"></p>
+  <script>
+    const a = { first: "John" };
+    const b = { last: "Doe" };
+    const c = Object.assign({}, a, b);
+    document.getElementById("demo").innerHTML = JSON.stringify(c);
+  </script>
+</body>
+</html>

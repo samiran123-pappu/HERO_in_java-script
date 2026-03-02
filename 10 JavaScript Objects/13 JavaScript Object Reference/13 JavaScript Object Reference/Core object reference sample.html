@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Object Reference Sample</h3>
+  <pre id="demo"></pre>
+  <script>
+    const obj = { a: 1, b: 2 };
+    const out = {
+      keys: Object.keys(obj),
+      values: Object.values(obj),
+      entries: Object.entries(obj)
+    };
+    document.getElementById("demo").textContent = JSON.stringify(out, null, 2);
+  </script>
+</body>
+</html>

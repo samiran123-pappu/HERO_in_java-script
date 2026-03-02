@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Object Protection</h3>
+  <p id="demo"></p>
+  <script>
+    const obj = Object.freeze({ a: 1 });
+    obj.a = 5;
+    document.getElementById("demo").innerHTML = `a = ${obj.a}, frozen = ${Object.isFrozen(obj)}`;
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Object.entries()</h3>
+  <p id="demo"></p>
+  <script>
+    const fruits = { Bananas: 300, Oranges: 200, Apples: 500 };
+    let text = "";
+    for (const [fruit, value] of Object.entries(fruits)) text += `${fruit}: ${value}<br>`;
+    document.getElementById("demo").innerHTML = text;
+  </script>
+</body>
+</html>

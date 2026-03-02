@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Constructor Function</h3>
+  <p id="demo"></p>
+  <script>
+    function Person(first, last) { this.firstName = first; this.lastName = last; }
+    const a = new Person("John", "Doe");
+    const b = new Person("Anna", "Rally");
+    document.getElementById("demo").innerHTML = a.firstName + " & " + b.firstName;
+  </script>
+</body>
+</html>

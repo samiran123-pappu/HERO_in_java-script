@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Object.defineProperty</h3>
+  <p id="demo"></p>
+  <script>
+    const obj = {};
+    Object.defineProperty(obj, "version", { value: 1, enumerable: true });
+    document.getElementById("demo").innerHTML = JSON.stringify(Object.keys(obj));
+  </script>
+</body>
+</html>

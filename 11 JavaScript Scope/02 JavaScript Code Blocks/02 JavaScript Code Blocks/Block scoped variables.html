@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Code Blocks</h3>
+  <p id="demo"></p>
+  <script>
+    let output = "";
+    {
+      let x = 10;
+      output += `Inside block x = ${x}<br>`;
+    }
+    output += "Outside block x is not accessible";
+    document.getElementById("demo").innerHTML = output;
+  </script>
+</body>
+</html>

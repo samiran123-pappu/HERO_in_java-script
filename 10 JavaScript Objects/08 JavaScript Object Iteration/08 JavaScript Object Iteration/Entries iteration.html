@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Iterating Object Entries</h3>
+  <p id="demo"></p>
+  <script>
+    const person = { name: "John", age: 30, city: "New York" };
+    let html = "";
+    for (const [k, v] of Object.entries(person)) html += `${k}: ${v}<br>`;
+    document.getElementById("demo").innerHTML = html;
+  </script>
+</body>
+</html>

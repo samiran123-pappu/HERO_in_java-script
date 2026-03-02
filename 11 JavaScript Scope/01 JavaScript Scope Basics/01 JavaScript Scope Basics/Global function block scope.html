@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Scope Basics</h3>
+  <p id="demo"></p>
+  <script>
+    let text = "";
+    const globalName = "Volvo";
+    function show() {
+      const localName = "Inside Function";
+      text += `Global: ${globalName}<br>`;
+      text += `Local: ${localName}<br>`;
+    }
+    show();
+    document.getElementById("demo").innerHTML = text;
+  </script>
+</body>
+</html>

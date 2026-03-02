@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Scope Reference</h3>
+  <pre id="demo"></pre>
+  <script>
+    const ref = {
+      scopes: ["global", "function", "block"],
+      strict: true,
+      hoisting: "declarations only"
+    };
+    document.getElementById("demo").textContent = JSON.stringify(ref, null, 2);
+  </script>
+</body>
+</html>

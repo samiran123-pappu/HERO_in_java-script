@@ -1,3 +1,5 @@
 # JavaScript Learning Hub
 
-Use `index.html` to navigate all 12 tracks.
+Use `index.html` to navigate all 14 tracks.
+
+
