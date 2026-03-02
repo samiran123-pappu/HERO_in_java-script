@@ -1,115 +1,40 @@
-﻿# JavaScript Array Const
+# JavaScript Array Const
 
-## ECMAScript 2015 (ES6)
-In 2015, JavaScript introduced an important keyword: `const`.
+Track: **14 JavaScript Arrays**
 
-It is now common to declare arrays with `const`:
+## Core Idea
 
-```js
-const cars = ["Saab", "Volvo", "BMW"];
-```
+- Arrays are ordered collections with numeric indexes starting at 0.
+- Most array methods return new arrays; some mutate the original array.
 
-## Cannot Be Reassigned
-An array declared with `const` cannot be reassigned to a new array:
+## Syntax Patterns
 
-```js
-const cars = ["Saab", "Volvo", "BMW"];
-cars = ["Toyota", "Volvo", "Audi"]; // ERROR
-```
+- Iteration patterns: `for`, `for...of`, `.forEach()`, `.map()`, `.filter()`.
+- Search patterns: `.indexOf()`, `.find()`, `.findIndex()`, `.includes()`.
 
-## Arrays Are Not Fully Constant
-`const` does not make array elements immutable.
-`const` makes the reference constant.
+## Common Mistakes
 
-So you can still change items inside the same array.
+- Forgetting which methods mutate (`push`, `pop`, `sort`) vs return new arrays (`map`, `filter`).
 
-## Elements Can Be Reassigned
+## How To Study This Topic
 
-```js
-const cars = ["Saab", "Volvo", "BMW"];
+- Read the HTML example heading and predict the expected result first.
+- Run the `.js` file and verify each variable/value transition.
+- Open the `.html` file and compare visible output with your prediction.
+- Change one line and rerun to observe cause/effect clearly.
 
-cars[0] = "Toyota";   // allowed
-cars.push("Audi");    // allowed
-```
+## Quick Self-Check
 
-## Assigned When Declared
-`const` must be initialized at declaration time.
+- Can I explain this topic in one sentence without reading code?
+- Can I write a minimal working example from memory?
+- Can I name one common bug and how to avoid it?
+## Learning Path
 
-```js
-const cars; // SyntaxError
-cars = ["Saab", "Volvo", "BMW"];
-```
+- Prerequisite: **JavaScript Array Iterations**
+- Next Topic: **JavaScript Array Reference**
 
-With `var`, later assignment is allowed:
+## Mini Exercises
 
-```js
-cars = ["Saab", "Volvo", "BMW"];
-var cars;
-```
-
-## Const Block Scope
-`const` is block scoped.
-
-```js
-const cars = ["Saab", "Volvo", "BMW"];
-// cars[0] is "Saab"
-
-{
-  const cars = ["Toyota", "Volvo", "BMW"];
-  // cars[0] is "Toyota"
-}
-
-// cars[0] is "Saab"
-```
-
-`var` is function/global scoped, not block scoped:
-
-```js
-var cars = ["Saab", "Volvo", "BMW"];
-// cars[0] is "Saab"
-
-{
-  var cars = ["Toyota", "Volvo", "BMW"];
-  // cars[0] is "Toyota"
-}
-
-// cars[0] is "Toyota"
-```
-
-## Redeclaring Arrays
-`var` can be redeclared:
-
-```js
-var cars = ["Volvo", "BMW"];
-var cars = ["Toyota", "BMW"];
-cars = ["Volvo", "Saab"];
-```
-
-`const` cannot be redeclared or reassigned in the same scope:
-
-```js
-const cars = ["Volvo", "BMW"];
-
-// const cars = ["Volvo", "BMW"]; // Not allowed
-// var cars = ["Volvo", "BMW"];   // Not allowed
-// cars = ["Volvo", "BMW"];       // Not allowed
-```
-
-But `const` can be declared again in a different block:
-
-```js
-const cars = ["Volvo", "BMW"];
-
-{
-  const cars = ["Toyota", "BMW"];
-}
-```
-
-## VIP Points (Important)
-- `const` array means fixed reference, not fixed contents.
-- You can modify elements (`cars[0] = ...`, `push`, `pop`, etc.).
-- You cannot reassign the whole array variable.
-- `const` must be initialized at declaration.
-- `const` is block scoped.
-- Same-scope redeclaration with `const` is not allowed.
-- Different-block `const` with same name is allowed.
+1. Write one small code example from this topic without looking at notes.
+2. Modify one existing example so it fails, then fix it and explain why.
+3. Explain this topic in 3-5 lines as if teaching a beginner.

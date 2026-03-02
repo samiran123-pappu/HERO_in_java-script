@@ -1,67 +1,40 @@
-# Note
-```bash
-Every JavaScript object has a toString() method.
+# JavaScript Array Methods
 
-The toString() method is used internally by JavaScript when an object needs to be displayed as a text (like in HTML), or when an object needs to be used as a string.
-```
+Track: **14 JavaScript Arrays**
 
+## Core Idea
 
-# Note
-```bash
-Many languages allow negative bracket indexing like [-1] to access elements from the end of an object / array / string.
+- Arrays are ordered collections with numeric indexes starting at 0.
+- Most array methods return new arrays; some mutate the original array.
 
-This is not possible in JavaScript, because [] is used for accessing both arrays and objects. obj[-1] refers to the value of key -1, not to the last property of the object.
+## Syntax Patterns
 
-The at() method was introduced in ES2022 to solve this problem.
-```
+- Iteration patterns: `for`, `for...of`, `.forEach()`, `.map()`, `.filter()`.
+- Search patterns: `.indexOf()`, `.find()`, `.findIndex()`, `.includes()`.
 
-# Note
-```bash
-The concat() method does not change the existing arrays. It always returns a new array.
-The concat() method can take any number of array arguments.
-Example (Merging Three Arrays)
-```
+## Common Mistakes
 
+- Forgetting which methods mutate (`push`, `pop`, `sort`) vs return new arrays (`map`, `filter`).
 
+## How To Study This Topic
 
+- Read the HTML example heading and predict the expected result first.
+- Run the `.js` file and verify each variable/value transition.
+- Open the `.html` file and compare visible output with your prediction.
+- Change one line and rerun to observe cause/effect clearly.
 
+## Quick Self-Check
 
+- Can I explain this topic in one sentence without reading code?
+- Can I write a minimal working example from memory?
+- Can I name one common bug and how to avoid it?
+## Learning Path
 
+- Prerequisite: **Array Basics**
+- Next Topic: **Array Methods (or next section in this track)**
 
+## Mini Exercises
 
-
-
-
-```javascript
-const arr1 = ["Cecilie", "Lone"];
-const arr2 = ["Emil", "Tobias", "Linus"];
-const arr3 = ["Robin", "Morgan"];
-const myChildren = arr1.concat(arr2, arr3);
-```
-
-
-# Note
-```bash
-The copyWithin() method overwrites the existing values.
-
-The copyWithin() method does not add items to the array.
-
-The copyWithin() method does not change the length of the array.
-
-
-const fruits1 = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Lemon"];
-fruits1.copyWithin(2, 1, 2);
-console.log(fruits1);
-```
-
-```bash
-JavaScript Array delete()
-Warning !
-Using delete() leaves undefined holes in the array.
-
-Use pop() or shift() instead.
-
-Example
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-delete fruits[0];
-```
+1. Pick one array method and explain whether it mutates the original array.
+2. Rewrite one array example using a different method (`map` vs `forEach`, etc.).
+3. Create a small array challenge and solve it in two ways.

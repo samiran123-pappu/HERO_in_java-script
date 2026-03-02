@@ -1,6 +1,8 @@
 # JavaScript Arithmetic Operators
 
-Arithmetic operators work on numbers (literals, variables, expressions):
+Track: **04 JavaScript Operators**
+
+## Core Operators
 
 - `+` add
 - `-` subtract
@@ -8,8 +10,28 @@ Arithmetic operators work on numbers (literals, variables, expressions):
 - `/` divide
 - `%` remainder
 - `**` exponentiation
-- `++` increment
-- `--` decrement
+- `++` / `--` increment/decrement
 
-Operator precedence controls order of evaluation.
-Use parentheses when you want explicit order.
+## Precedence
+
+`*` and `/` run before `+` and `-` unless parentheses override.
+
+```js
+100 + 50 * 3;   // 250
+(100 + 50) * 3; // 450
+```
+
+## Quick Check
+
+- Can you compute an expression with precedence correctly?
+- Do you know `%` returns remainder, not percentage?
+## Learning Path
+
+- Prerequisite: **JavaScript Operators Basics**
+- Next Topic: **JavaScript Assignment Operators**
+
+## Mini Exercises
+
+1. Write one small code example from this topic without looking at notes.
+2. Modify one existing example so it fails, then fix it and explain why.
+3. Explain this topic in 3-5 lines as if teaching a beginner.

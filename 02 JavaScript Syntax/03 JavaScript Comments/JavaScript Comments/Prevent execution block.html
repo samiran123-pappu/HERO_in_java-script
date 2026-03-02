@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -12,11 +12,44 @@
 </head>
 <body>
   <h1>Prevent execution block</h1>
-  <p>Open browser console to see output.</p>
+  <h2>Example</h2>
+  <p>This page demonstrates: Prevent execution block.</p>
+  <p>This example runs JavaScript and shows the result below.</p>
+  <pre id="demo"></pre>
   <p id="demo">Demo text</p>
   <p id="myH"></p>
   <p id="myP"></p>
   <button id="btn" type="button">Try it</button>
+    <script data-console-capture="true">
+    (function () {
+      const demo = document.getElementById("demo");
+      if (!demo) return;
+
+      const lines = [];
+      const render = () => {
+        demo.textContent = lines.length ? lines.join("\n") : "Run the example to see output.";
+      };
+
+      const oldLog = console.log;
+      const oldError = console.error;
+
+      console.log = function (...args) {
+        lines.push(args.map(String).join(" "));
+        render();
+        oldLog.apply(console, args);
+      };
+
+      console.error = function (...args) {
+        lines.push("ERROR: " + args.map(String).join(" "));
+        render();
+        oldError.apply(console, args);
+      };
+
+      render();
+    })();
+  </script>
   <script src="./Prevent execution block.js"></script>
 </body>
 </html>
+
+

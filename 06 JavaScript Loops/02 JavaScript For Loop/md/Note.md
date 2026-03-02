@@ -1,17 +1,39 @@
-﻿# JavaScript For Loop
+# JavaScript For Loop
 
-`for` uses three optional expressions:
+Track: **06 JavaScript Loops**
+
+## Structure
 
 ```js
-for (exp1; exp2; exp3) {
-  // code
+for (init; condition; step) {
+  // body
 }
 ```
 
-- `exp1`: runs once before loop
-- `exp2`: loop condition
-- `exp3`: runs after each iteration
+- `init` runs once
+- `condition` checked before each iteration
+- `step` runs after each iteration
 
-## VIP Points
-- `exp1`, `exp2`, and `exp3` are optional.
-- If `exp2` is omitted, use `break` to avoid infinite loop.
+## Common Use
+
+Index-based array traversal and counted repetition.
+
+## Pitfalls
+
+- Off-by-one errors (`i <= arr.length` instead of `<`)
+- Forgetting `step` update
+
+## Quick Check
+
+- Can you write a `for` loop to print 0..4?
+- Can you iterate array safely without overflow?
+## Learning Path
+
+- Prerequisite: **JavaScript Loops Basics**
+- Next Topic: **JavaScript While Loops**
+
+## Mini Exercises
+
+1. Write one small code example from this topic without looking at notes.
+2. Modify one existing example so it fails, then fix it and explain why.
+3. Explain this topic in 3-5 lines as if teaching a beginner.

@@ -1,20 +1,40 @@
-﻿# JavaScript Statements
+# JavaScript Statements
 
-A program is a sequence of statements executed in order.
+Track: **02 JavaScript Syntax**
 
-## Statement Building Blocks
-- values
-- operators
-- expressions
-- keywords
-- comments
+## Core Idea
 
-## Important Formatting
-- semicolons are recommended
-- keep line lengths readable
-- break long lines after operators
-- use code blocks `{}` for grouped logic
+- Syntax and statements are the grammar of JavaScript programs.
+- Clean formatting, comments, and predictable output methods improve learning speed.
 
-## VIP Points
-- Multiple statements can be on one line, but readability is lower.
-- Use consistent indentation in code blocks.
+## Syntax Patterns
+
+- Prefer `let`/`const`, semicolons consistently, and readable line breaks.
+- Use `innerHTML`/`innerText` for visible output and `console.log` for debugging.
+
+## Common Mistakes
+
+- Mixing output styles randomly and skipping readability conventions.
+
+## How To Study This Topic
+
+- Read the HTML example heading and predict the expected result first.
+- Run the `.js` file and verify each variable/value transition.
+- Open the `.html` file and compare visible output with your prediction.
+- Change one line and rerun to observe cause/effect clearly.
+
+## Quick Self-Check
+
+- Can I explain this topic in one sentence without reading code?
+- Can I write a minimal working example from memory?
+- Can I name one common bug and how to avoid it?
+## Learning Path
+
+- Prerequisite: **JavaScript Syntax Basics**
+- Next Topic: **JavaScript Comments**
+
+## Mini Exercises
+
+1. Write one small code example from this topic without looking at notes.
+2. Modify one existing example so it fails, then fix it and explain why.
+3. Explain this topic in 3-5 lines as if teaching a beginner.

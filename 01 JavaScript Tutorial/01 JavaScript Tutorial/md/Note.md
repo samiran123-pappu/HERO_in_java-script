@@ -1,20 +1,40 @@
-﻿# JavaScript Tutorial
+# JavaScript Tutorial
 
-JavaScript is the programming language of the web.
+Track: **01 JavaScript Tutorial**
 
-This tutorial track goes from basics to modern JavaScript usage.
+## Core Idea
 
-## Why Learn JavaScript
-- It is one of the 3 core web technologies with HTML and CSS.
-- It controls page behavior and user interaction.
-- It runs directly in the browser and is free to use.
+- Syntax and statements are the grammar of JavaScript programs.
+- Clean formatting, comments, and predictable output methods improve learning speed.
 
-## Learning Tips
-- Practice every example.
-- Read in sequence and revisit difficult parts.
-- Build small demos after each concept.
+## Syntax Patterns
 
-## VIP Points
-- JavaScript is not Java.
-- JavaScript is standardized as ECMAScript.
-- Hands-on practice is the fastest way to improve.
+- Prefer `let`/`const`, semicolons consistently, and readable line breaks.
+- Use `innerHTML`/`innerText` for visible output and `console.log` for debugging.
+
+## Common Mistakes
+
+- Mixing output styles randomly and skipping readability conventions.
+
+## How To Study This Topic
+
+- Read the HTML example heading and predict the expected result first.
+- Run the `.js` file and verify each variable/value transition.
+- Open the `.html` file and compare visible output with your prediction.
+- Change one line and rerun to observe cause/effect clearly.
+
+## Quick Self-Check
+
+- Can I explain this topic in one sentence without reading code?
+- Can I write a minimal working example from memory?
+- Can I name one common bug and how to avoid it?
+## Learning Path
+
+- Prerequisite: **None (start here)**
+- Next Topic: **JavaScript Introduction**
+
+## Mini Exercises
+
+1. Write one small code example from this topic without looking at notes.
+2. Modify one existing example so it fails, then fix it and explain why.
+3. Explain this topic in 3-5 lines as if teaching a beginner.

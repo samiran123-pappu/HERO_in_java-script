@@ -1,17 +1,40 @@
 # JavaScript Date Formats
 
-## Input types
+Track: **12 JavaScript Dates**
 
-- ISO: `YYYY-MM-DD` (recommended)
-- Short: `MM/DD/YYYY` (can be browser dependent)
-- Long: `Mar 25 2015` or `25 Mar 2015`
+## Core Idea
 
-## Safer practice
+- Date/time code must be explicit about timezone, formatting, and arithmetic behavior.
+- `Date` and `Temporal` APIs differ; Temporal is safer and more explicit for modern workflows.
 
-- Prefer ISO strings for predictable parsing.
-- Be careful with ambiguous formats like `YYYY/MM/DD` or `DD-MM-YYYY`.
+## Syntax Patterns
 
-## Parsing
+- Date construction: `new Date(...)`; Temporal examples: `Temporal.Now.*`, `Temporal.PlainDate.*`.
+- Prefer ISO strings and explicit conversion steps.
 
-- `Date.parse(string)` returns milliseconds from Unix epoch.
-- Use `new Date(Date.parse(...))` to convert back to Date.
+## Common Mistakes
+
+- Parsing ambiguous date strings or doing timezone-sensitive logic without explicit zone handling.
+
+## How To Study This Topic
+
+- Read the HTML example heading and predict the expected result first.
+- Run the `.js` file and verify each variable/value transition.
+- Open the `.html` file and compare visible output with your prediction.
+- Change one line and rerun to observe cause/effect clearly.
+
+## Quick Self-Check
+
+- Can I explain this topic in one sentence without reading code?
+- Can I write a minimal working example from memory?
+- Can I name one common bug and how to avoid it?
+## Learning Path
+
+- Prerequisite: **JavaScript Date Basics**
+- Next Topic: **JavaScript Date Get Methods**
+
+## Mini Exercises
+
+1. Write one small code example from this topic without looking at notes.
+2. Modify one existing example so it fails, then fix it and explain why.
+3. Explain this topic in 3-5 lines as if teaching a beginner.

@@ -1,44 +1,40 @@
-# Array Search Methods
-```bash
-Array indexOf()
-Array lastIndexOf()
-Array includes()
-Array find()
-Array findIndex()
-Array findLast()
-Array findLastIndex()
-```
+# JavaScript Array Search
 
-# JavaScript Array indexOf()
-```bash
-The indexOf() method searches an array for an element value and returns its position.
+Track: **14 JavaScript Arrays**
 
-Note: The first item has position 0, the second item has position 1, and so on.
-```
-```bash
-Array.includes() allows to check for NaN values. Unlike Array.indexOf().
-```
+## Core Idea
 
+- Arrays are ordered collections with numeric indexes starting at 0.
+- Most array methods return new arrays; some mutate the original array.
 
-# Complete JavaScript Reference
-```bash
-For a complete reference to all JavaScript properties and methods, with full descriptions and many examples, go to:
+## Syntax Patterns
 
-W3Schools' Full JavaScript Reference.
+- Iteration patterns: `for`, `for...of`, `.forEach()`, `.map()`, `.filter()`.
+- Search patterns: `.indexOf()`, `.find()`, `.findIndex()`, `.includes()`.
 
-The reference inludes all JavaScript updates from 1999 to 2025.
-```
+## Common Mistakes
 
-# See Also:
-```bash
-JavaScript Array Tutorial
+- Forgetting which methods mutate (`push`, `pop`, `sort`) vs return new arrays (`map`, `filter`).
 
-JavaScript Basic Array Methods
+## How To Study This Topic
 
-JavaScript Array Sort Methods
+- Read the HTML example heading and predict the expected result first.
+- Run the `.js` file and verify each variable/value transition.
+- Open the `.html` file and compare visible output with your prediction.
+- Change one line and rerun to observe cause/effect clearly.
 
-JavaScript Array Iteration Methods
+## Quick Self-Check
 
-JavaScript Array Reference
-```
+- Can I explain this topic in one sentence without reading code?
+- Can I write a minimal working example from memory?
+- Can I name one common bug and how to avoid it?
+## Learning Path
 
+- Prerequisite: **JavaScript Array Methods**
+- Next Topic: **JavaScript Array Sort**
+
+## Mini Exercises
+
+1. Write one small code example from this topic without looking at notes.
+2. Modify one existing example so it fails, then fix it and explain why.
+3. Explain this topic in 3-5 lines as if teaching a beginner.

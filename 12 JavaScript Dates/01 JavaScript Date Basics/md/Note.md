@@ -1,18 +1,40 @@
 # JavaScript Date Basics
 
-- `Date` objects represent a specific moment in time.
-- The object is static after creation (it does not auto-update).
-- JavaScript stores time as milliseconds from `1970-01-01T00:00:00Z`.
+Track: **12 JavaScript Dates**
 
-## Constructors
+## Core Idea
 
-- `new Date()`
-- `new Date(dateString)`
-- `new Date(year, month, day, hours, minutes, seconds, ms)`
-- `new Date(milliseconds)`
+- Date/time code must be explicit about timezone, formatting, and arithmetic behavior.
+- `Date` and `Temporal` APIs differ; Temporal is safer and more explicit for modern workflows.
 
-## Important rules
+## Syntax Patterns
 
-- Month is zero-based: January = 0, December = 11.
-- Overflow is auto-adjusted (e.g. month 15 moves to next year).
-- One numeric argument is treated as milliseconds, not year/month.
+- Date construction: `new Date(...)`; Temporal examples: `Temporal.Now.*`, `Temporal.PlainDate.*`.
+- Prefer ISO strings and explicit conversion steps.
+
+## Common Mistakes
+
+- Parsing ambiguous date strings or doing timezone-sensitive logic without explicit zone handling.
+
+## How To Study This Topic
+
+- Read the HTML example heading and predict the expected result first.
+- Run the `.js` file and verify each variable/value transition.
+- Open the `.html` file and compare visible output with your prediction.
+- Change one line and rerun to observe cause/effect clearly.
+
+## Quick Self-Check
+
+- Can I explain this topic in one sentence without reading code?
+- Can I write a minimal working example from memory?
+- Can I name one common bug and how to avoid it?
+## Learning Path
+
+- Prerequisite: **None (start here)**
+- Next Topic: **JavaScript Date Formats**
+
+## Mini Exercises
+
+1. Write one small code example from this topic without looking at notes.
+2. Modify one existing example so it fails, then fix it and explain why.
+3. Explain this topic in 3-5 lines as if teaching a beginner.

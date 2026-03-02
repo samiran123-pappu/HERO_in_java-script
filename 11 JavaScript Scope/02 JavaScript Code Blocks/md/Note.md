@@ -1,9 +1,40 @@
 # JavaScript Code Blocks
 
-A block is code inside `{}`.
+Track: **11 JavaScript Scope**
 
-- In `if`, `for`, `while`, and functions, blocks group statements.
-- `let` and `const` inside a block are only visible in that block.
-- Standalone blocks can be used for temporary calculations.
+## Core Idea
 
-This prevents global-scope pollution and naming collisions.
+- Scope defines where a variable is visible and where it can be safely used.
+- Hoisting affects declarations; strict mode prevents many silent JavaScript mistakes.
+
+## Syntax Patterns
+
+- `let` and `const` are block-scoped. `var` is function-scoped.
+- Use `"use strict";` at script/function top to enable strict mode rules.
+
+## Common Mistakes
+
+- Assuming `var` is block scoped, or using variables before declaration and hitting TDZ errors.
+
+## How To Study This Topic
+
+- Read the HTML example heading and predict the expected result first.
+- Run the `.js` file and verify each variable/value transition.
+- Open the `.html` file and compare visible output with your prediction.
+- Change one line and rerun to observe cause/effect clearly.
+
+## Quick Self-Check
+
+- Can I explain this topic in one sentence without reading code?
+- Can I write a minimal working example from memory?
+- Can I name one common bug and how to avoid it?
+## Learning Path
+
+- Prerequisite: **JavaScript Scope Basics**
+- Next Topic: **JavaScript Hoisting**
+
+## Mini Exercises
+
+1. Write one small code example from this topic without looking at notes.
+2. Modify one existing example so it fails, then fix it and explain why.
+3. Explain this topic in 3-5 lines as if teaching a beginner.
