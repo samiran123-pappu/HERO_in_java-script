@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Old String HTML Wrappers</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 20px; line-height: 1.6; }
+    .old-school { background: #fef9e7; padding: 15px; border-left: 5px solid #f4d03f; margin: 15px 0; }
+  </style>
+</head>
+<body>
+
+<h2>Deprecated String HTML wrappers in action</h2>
+
+<script>
+  let msg = "Alert: System Update";
+
+  // These are the old methods returning HTML strings
+  document.write("<p>" + msg.bold()                + "</p>");
+  document.write("<p>" + msg.italics()             + "</p>");
+  document.write("<p>" + msg.big()                 + "</p>");
+  document.write("<p>" + msg.small()               + "</p>");
+  document.write("<p>" + msg.fixed()               + "</p>");
+  document.write("<p>" + msg.strike()              + "</p>");
+  document.write("<p>" + msg.fontcolor("crimson")  + "</p>");
+  document.write("<p>" + msg.fontsize(6)           + "</p>");
+  document.write("<p>" + msg.link("https://example.com") + "</p>");
+  document.write("<p>" + msg.anchor("top")         + "</p>");   // named anchor
+
+  // Chemical formula example
+  document.write("<p>Water: H" + "2".sub() + "O  →  Energy: E = mc" + "2".sup() + "</p>");
+
+  // Blinking (only works in very old browsers or with CSS polyfill today)
+  document.write("<p>" + "BLINKING TEXT".blink() + "  ← probably won't blink</p>");
+</script>
+
+<div class="old-school">
+  <strong>Note:</strong> All these tags/methods are deprecated.<br>
+  Modern browsers still render most of them for backward compatibility, but:
+  <ul>
+    <li><code>&lt;blink&gt;</code> was removed from most browsers years ago</li>
+    <li><code>&lt;font&gt;</code>, <code>&lt;big&gt;</code>, <code>&lt;tt&gt;</code>, <code>&lt;strike&gt;</code> are obsolete</li>
+    <li>Use CSS or semantic HTML instead</li>
+  </ul>
+</div>
+
+</body>
+</html>

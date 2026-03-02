@@ -1,13 +1,18 @@
-﻿# 09 JavaScript Tutorial
+﻿# JavaScript Tutorial
 
-Fresh track rebuilt with consistent structure.
+This is the new structured tutorial area.
 
 ## Topics
-1. 01 JavaScript Tutorial
-2. 02 JavaScript Introduction
-3. 03 JavaScript Where To
-4. 04 JavaScript Output
+1. JavaScript Tutorial
+2. JavaScript Introduction
+3. JavaScript Where To
+4. JavaScript Output
 
 Each topic includes:
-- md/Note.md
-- topic folder with starter .js and .html
+- `md/Note.md`
+- topic example folder with focused `.js` and `.html`
+- `index.html` for quick navigation
+
+## Legacy
+Old files are preserved in `OLD/`.
+Use this new structure as the primary learning path.

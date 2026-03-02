@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Temporal.PlainDate</h1>
+    <h2>The equals() Method</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const date1 = Temporal.PlainDate.from('2026-05-17');
+        const date2 = Temporal.PlainDate.from('2026-05-17');
+        let result = date1.equals(date2);
+
+        document.getElementById("demo").innerHTML = result;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+// The const keyword was introduced in ES6 (2015)
+
+// Variables defined with const cannot be Redeclared
+
+// Variables defined with const cannot be Reassigned
+
+// Variables defined with const have Block Scope
+
+
+// Cannot be Reassigned
+
+
+const PI = 3.141592653589793;
+PI = 3.14;      // This will give an error
+PI = PI + 10;   // This will also give an error
+
+// Must be Assigned
+
+// Correct
+const Correct = 3.14159265359;
+// Incorrect
+const Incorrect;
+Incorrect= 3.14159265359;
+
+// When to use JavaScript const?
+// Always declare a variable with const when you know that the value should not be changed.
+
+// Use const when you declare:
+
+// A new Array
+// A new Object
+// A new Function
+// A new RegExp

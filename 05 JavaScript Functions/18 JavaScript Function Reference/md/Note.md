@@ -1,8 +1,8 @@
 ﻿# 18 JavaScript Function Reference
 
-Starter note for this topic.
+Core concepts, syntax, and runnable examples for 18 JavaScript Function Reference.
 
-## What to learn
-- Core concept
-- Syntax
-- Common examples
+## Focus
+- What it is
+- How to use it
+- Common mistakes

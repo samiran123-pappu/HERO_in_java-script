@@ -1,8 +1,8 @@
 ﻿# 07 JavaScript Function Expressions
 
-Starter note for this topic.
+Core concepts, syntax, and runnable examples for 07 JavaScript Function Expressions.
 
-## What to learn
-- Core concept
-- Syntax
-- Common examples
+## Focus
+- What it is
+- How to use it
+- Common mistakes

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Temporal vs Date</h1>
+    <p>Date math with Date often requires manual calculations.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let start = new Date("2026-05-17");
+        start.setDate(start.getDate() + 30);
+
+        document.getElementById("demo").innerHTML = start;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Temporal</h1>
+    <h2>The PlainTime() Method</h2>
+
+    <p>PlainTime() allows you to create a time with no date:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const date = new Temporal.PlainTime(10, 30);
+        const now = Temporal.Now.plainDateTimeISO();
+        const dateTime = Temporal.PlainDateTime.from("2026-02-23T03:07:07.773129883");
+
+        document.getElementById("demo").innerHTML = date.toString() + "<br>" + now.toString() + "<br>" + dateTime.toString();
+    </script>
+
+</body>
+
+</html>

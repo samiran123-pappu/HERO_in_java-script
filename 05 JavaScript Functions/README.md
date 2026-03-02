@@ -1,7 +1,5 @@
 ﻿# 05 JavaScript Functions
 
-Fresh track rebuilt with consistent structure.
-
 ## Topics
 1. 01 JavaScript Functions
 2. 02 JavaScript Function Basics
@@ -21,7 +19,3 @@ Fresh track rebuilt with consistent structure.
 16. 16 JavaScript IIFE
 17. 17 JavaScript Closures
 18. 18 JavaScript Function Reference
-
-Each topic includes:
-- md/Note.md
-- topic folder with starter .js and .html

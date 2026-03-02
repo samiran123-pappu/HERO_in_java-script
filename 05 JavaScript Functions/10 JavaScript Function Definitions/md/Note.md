@@ -1,8 +1,8 @@
 ﻿# 10 JavaScript Function Definitions
 
-Starter note for this topic.
+Core concepts, syntax, and runnable examples for 10 JavaScript Function Definitions.
 
-## What to learn
-- Core concept
-- Syntax
-- Common examples
+## Focus
+- What it is
+- How to use it
+- Common mistakes

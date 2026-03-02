@@ -1,8 +1,8 @@
 ﻿# 15 JavaScript bind() Method
 
-Starter note for this topic.
+Core concepts, syntax, and runnable examples for 15 JavaScript bind() Method.
 
-## What to learn
-- Core concept
-- Syntax
-- Common examples
+## Focus
+- What it is
+- How to use it
+- Common mistakes

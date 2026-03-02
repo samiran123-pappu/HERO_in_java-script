@@ -1,8 +1,0 @@
-﻿# 02 Temporal vs Date
-
-Starter note for this topic.
-
-## What to learn
-- Core concept
-- Syntax
-- Common examples

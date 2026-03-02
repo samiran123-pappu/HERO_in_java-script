@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Temporal</h1>
+    <h2>The PlainDate.from() Method</h2>
+
+    <p>PlainDate.from() creates a date with no time zone:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const date = Temporal.PlainDate.from('2026-05-17');
+
+        document.getElementById("demo").innerHTML = date.toString();
+    </script>
+
+</body>
+
+</html>

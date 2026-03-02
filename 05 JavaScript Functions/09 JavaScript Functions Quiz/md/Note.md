@@ -1,8 +1,8 @@
 ﻿# 09 JavaScript Functions Quiz
 
-Starter note for this topic.
+Core concepts, syntax, and runnable examples for 09 JavaScript Functions Quiz.
 
-## What to learn
-- Core concept
-- Syntax
-- Common examples
+## Focus
+- What it is
+- How to use it
+- Common mistakes

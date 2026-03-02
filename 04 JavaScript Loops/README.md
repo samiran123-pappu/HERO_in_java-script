@@ -1,15 +1,17 @@
-﻿# 04 JavaScript Loops
+﻿# JavaScript Loops
 
-Fresh track rebuilt with consistent structure.
-
-## Topics
-1. 01 JavaScript Loops Basics
-2. 02 JavaScript For Loop
-3. 03 JavaScript While Loops
-4. 04 JavaScript Break
-5. 05 JavaScript Continue
-6. 06 JavaScript Control Flow
+Primary topics:
+1. JavaScript Loops
+2. JavaScript For Loop
+3. JavaScript While Loops
+4. JavaScript Break
+5. JavaScript Continue
+6. JavaScript Control Flow
 
 Each topic includes:
-- md/Note.md
-- topic folder with starter .js and .html
+- `md/Note.md`
+- topic folder with `.js` examples
+- matching `.html` files
+- `index.html`
+
+Legacy material is preserved in `OLD/`.

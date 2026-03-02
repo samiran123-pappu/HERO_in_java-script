@@ -1,8 +1,8 @@
 ﻿# 17 JavaScript Closures
 
-Starter note for this topic.
+Core concepts, syntax, and runnable examples for 17 JavaScript Closures.
 
-## What to learn
-- Core concept
-- Syntax
-- Common examples
+## Focus
+- What it is
+- How to use it
+- Common mistakes

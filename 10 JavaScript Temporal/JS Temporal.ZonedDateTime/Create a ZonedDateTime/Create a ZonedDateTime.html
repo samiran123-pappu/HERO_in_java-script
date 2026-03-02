@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Temporal</h1>
+    <h2>The ZonedDateTime.from() Method</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const zonedDate = Temporal.ZonedDateTime.from({
+            timeZone: 'America/Los_Angeles',
+            year: 1995,
+            month: 12,
+            day: 7,
+            hour: 3,
+            minute: 24,
+            second: 30,
+            millisecond: 0,
+            microsecond: 3,
+            nanosecond: 500
+        });
+
+        document.getElementById("demo").innerHTML = zonedDate.toString();
+    </script>
+
+</body>
+
+</html>

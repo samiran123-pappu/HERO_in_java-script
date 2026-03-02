@@ -1,8 +1,8 @@
 ﻿# 05 JavaScript Function Return
 
-Starter note for this topic.
+Core concepts, syntax, and runnable examples for 05 JavaScript Function Return.
 
-## What to learn
-- Core concept
-- Syntax
-- Common examples
+## Focus
+- What it is
+- How to use it
+- Common mistakes

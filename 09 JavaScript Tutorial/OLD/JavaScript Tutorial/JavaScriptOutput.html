@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <h1>
+        <div>JavaScript Display Possibilities</div>
+        <div>JavaScript can "display" data in different ways:</div>
+        <div>
+            <i> Writing into an HTML element, using innerHTML or innerText.</i>
+
+            Writing into the HTML output using document.write().
+            Writing into an alert box, using window.alert().
+            Writing into the browser console, using console.log().
+        </div>
+    </h1>
+</head>
+
+<body>
+    <h1>My First Web Page</h1>
+    <p>My First Paragraph</p>
+
+    <p id="demo"></p>
+    <button onclick="myFunction()">Click Me</button>
+
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "<h2>Hello World</h2>";
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+<!-- Note
+Changing the innerHTML property of an HTML element is the most common way to display data in HTML. -->

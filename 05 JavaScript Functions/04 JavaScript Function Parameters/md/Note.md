@@ -1,8 +1,8 @@
 ﻿# 04 JavaScript Function Parameters
 
-Starter note for this topic.
+Core concepts, syntax, and runnable examples for 04 JavaScript Function Parameters.
 
-## What to learn
-- Core concept
-- Syntax
-- Common examples
+## Focus
+- What it is
+- How to use it
+- Common mistakes

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Temporal</h1>
+    <h2>The withTimeZone() Method</h2>
+    
+
+    <p id="demo"></p>
+
+    <script>
+        const oslo = Temporal.ZonedDateTime.from
+            ("2026-02-17T14:30:00+01:00[Europe/Oslo]");
+
+        const newYork = oslo.withTimeZone("America/New_York");
+
+        document.getElementById("demo").innerHTML = newYork.toString();
+    </script>
+
+</body>
+
+</html>
