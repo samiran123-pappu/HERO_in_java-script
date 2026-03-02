@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Assignment Operators</h2>
+  <p id="demo"></p>
+  <script>
+    let x = 10;
+    x += 5;
+    x *= 2;
+
+    let label = "Value";
+    label += ": " + x;
+
+    let y = null;
+    y ??= 99;
+
+    document.getElementById("demo").innerHTML = `${label}<br>y=${y}`;
+  </script>
+</body>
+</html>

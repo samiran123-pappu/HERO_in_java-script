@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Comparison Operators</h2>
+  <p id="demo"></p>
+  <script>
+    const age = Number("18");
+    const voteable = Number.isNaN(age) ? "Input is not a number" : (age < 18 ? "Too young" : "Old enough");
+
+    document.getElementById("demo").innerHTML =
+      `5 == "5" => ${5 == "5"}<br>` +
+      `5 === "5" => ${5 === "5"}<br>` +
+      `"A" < "B" => ${"A" < "B"}<br>` +
+      `Vote check: ${voteable}`;
+  </script>
+</body>
+</html>

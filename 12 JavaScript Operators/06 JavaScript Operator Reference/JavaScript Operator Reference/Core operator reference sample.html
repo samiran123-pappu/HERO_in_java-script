@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Operator Quick Reference</h2>
+  <pre id="demo"></pre>
+  <script>
+    const ref = {
+      arithmetic: ["+", "-", "*", "/", "%", "**", "++", "--"],
+      assignment: ["=", "+=", "-=", "*=", "/=", "%=", "**=", "&&=", "||=", "??="],
+      comparison: ["==", "===", "!=", "!==", ">", "<", ">=", "<="],
+      logical: ["&&", "||", "!"]
+    };
+    document.getElementById("demo").textContent = JSON.stringify(ref, null, 2);
+  </script>
+</body>
+</html>
